@@ -1,0 +1,688 @@
+BASE <http://purl.obolibrary.org/oboschema/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX metatype: <https://w3id.org/biolink/biolinkml/meta/types/>
+
+
+metatype:String xsd:string
+
+metatype:Integer xsd:integer
+
+metatype:Boolean xsd:boolean
+
+metatype:Float xsd:float
+
+metatype:Double xsd:double
+
+metatype:Time xsd:dateTime
+
+metatype:Date xsd:date
+
+metatype:Datetime xsd:dateTime
+
+metatype:Uriorcurie IRI
+
+metatype:Uri IRI
+
+metatype:Ncname xsd:string
+
+metatype:Objectidentifier IRI
+
+metatype:Nodeidentifier NONLITERAL
+
+<Abnormal> {
+    (  $<Abnormal_tes> (  &<Origin_tes> ;
+          rdf:type [ <Origin> ] ?
+       ) ;
+       rdf:type [ <Abnormal> ] ?
+    )
+}
+
+<AbnormalPhenotype>  (
+    CLOSED {
+       (  $<AbnormalPhenotype_tes> (  &<Abnormal_tes> ;
+             rdf:type [ <Abnormal> ] ? ;
+             &<Organismal_tes> ;
+             rdf:type [ <Organismal> ] ? ;
+             <has_part> @<AtomicPhenotypicFeature> ? ;
+             <in_taxon> @<OrganismTaxon> ? ;
+             <never_in_taxon> @<OrganismTaxon> ?
+          ) ;
+          rdf:type [ <AbnormalPhenotype> ] ?
+       )
+    } OR @<SpeciesNeutralAbnormalPhenotype> OR @<SpeciesSpecificAbnormalPhenotype>
+)
+
+<AbormalAnatomicalEntity> {
+    (  $<AbormalAnatomicalEntity_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Abnormal_tes> ;
+          rdf:type [ <Abnormal> ] ?
+       ) ;
+       rdf:type [ <AbormalAnatomicalEntity> ] ?
+    )
+}
+
+<AnatomicalAtomicPhenotypicFeature> CLOSED {
+    (  $<AnatomicalAtomicPhenotypicFeature_tes> (  &<AtomicPhenotypicFeature_tes> ;
+          rdf:type [ <AtomicPhenotypicFeature> ] ? ;
+          <characteristic_of> @<EvolvedAnatomicalEntity> ?
+       ) ;
+       rdf:type [ <AnatomicalAtomicPhenotypicFeature> ] ?
+    )
+}
+
+<AnatomicalEntity>  (
+    @<AbormalAnatomicalEntity> OR @<ConstructedCellType> OR @<EvolvedAnatomicalEntity> OR @<GrossConstructedAnatomicalEntity> OR
+    @<GrossPathologicalAnatomicalEntity> OR @<PathologicalCellType> OR @<VariantAnatomicalEntity>
+)
+
+<AnatomicalEntity_struct> {
+    (  $<AnatomicalEntity_tes> (  &<PhysicalEntity_tes> ;
+          rdf:type [ <PhysicalEntity> ] ? ;
+          <subclass_of> @<AnatomicalEntity> * ;
+          <part_of> @<AnatomicalEntity> ? ;
+          <develops_from> @<AnatomicalEntity> * ;
+          <existence_starts_during> @<LifeStage> ? ;
+          <existence_ends_during> @<LifeStage> ?
+       ) ;
+       rdf:type [ <AnatomicalEntity> ] ?
+    )
+}
+
+<AtomicPhenotypicFeature>  (
+    CLOSED {
+       (  $<AtomicPhenotypicFeature_tes> (  &<AtomicTraitOrPhenotypicFeature_tes> ;
+             rdf:type [ <AtomicTraitOrPhenotypicFeature> ] ? ;
+             <subclass_of> @<CharacteristicValue> * ;
+             <characteristic_of> @<PhysicalEntityOrProcess> ?
+          ) ;
+          rdf:type [ <AtomicPhenotypicFeature> ] ?
+       )
+    } OR @<AnatomicalAtomicPhenotypicFeature> OR @<BiologicalProcessAtomicPhenotypicFeature> OR
+    @<ChemicalEntityAtomicPhenotypicFeature>
+)
+
+<AtomicTrait> CLOSED {
+    (  $<AtomicTrait_tes> (  &<AtomicTraitOrPhenotypicFeature_tes> ;
+          rdf:type [ <AtomicTraitOrPhenotypicFeature> ] ? ;
+          <subclass_of> @<CharacteristicAttribute> * ;
+          <characteristic_of> @<Entity> ?
+       ) ;
+       rdf:type [ <AtomicTrait> ] ?
+    )
+}
+
+<AtomicTraitOrPhenotypicFeature>  (
+    CLOSED {
+       (  $<AtomicTraitOrPhenotypicFeature_tes> (  &<Organismal_tes> ;
+             rdf:type [ <Organismal> ] ? ;
+             <in_taxon> @<OrganismTaxon> ? ;
+             <never_in_taxon> @<OrganismTaxon> ?
+          ) ;
+          rdf:type [ <AtomicTraitOrPhenotypicFeature> ] ?
+       )
+    } OR @<AtomicPhenotypicFeature> OR @<AtomicTrait>
+)
+
+<BiologicalProcess> CLOSED {
+    (  $<BiologicalProcess_tes> (  &<BiologicalProcessOrMolecularActivity_tes> ;
+          rdf:type [ <BiologicalProcessOrMolecularActivity> ] ?
+       ) ;
+       rdf:type [ <BiologicalProcess> ] ?
+    )
+}
+
+<BiologicalProcessAtomicPhenotypicFeature> CLOSED {
+    (  $<BiologicalProcessAtomicPhenotypicFeature_tes> (  &<AtomicPhenotypicFeature_tes> ;
+          rdf:type [ <AtomicPhenotypicFeature> ] ? ;
+          <characteristic_of> @<BiologicalProcess> ?
+       ) ;
+       rdf:type [ <BiologicalProcessAtomicPhenotypicFeature> ] ?
+    )
+}
+
+<BiologicalProcessOrMolecularActivity>  (
+    CLOSED {
+       (  $<BiologicalProcessOrMolecularActivity_tes> (  &<Process_tes> ;
+             rdf:type [ <Process> ] ? ;
+             &<Organismal_tes> ;
+             rdf:type [ <Organismal> ] ? ;
+             &<Evolved_tes> ;
+             rdf:type [ <Evolved> ] ? ;
+             <in_taxon> @<OrganismTaxon> ? ;
+             <never_in_taxon> @<OrganismTaxon> ?
+          ) ;
+          rdf:type [ <BiologicalProcessOrMolecularActivity> ] ?
+       )
+    } OR @<BiologicalProcess> OR @<MolecularActivity>
+)
+
+<BroadOrganismTaxon> CLOSED {
+    (  $<BroadOrganismTaxon_tes> (  &<OrganismTaxon_tes> ;
+          rdf:type [ <OrganismTaxon> ] ?
+       ) ;
+       rdf:type [ <BroadOrganismTaxon> ] ?
+    )
+}
+
+<CellularEvolvedAnatomicalEntity> CLOSED {
+    (  $<CellularEvolvedAnatomicalEntity_tes> (  &<EvolvedAnatomicalEntity_tes> ;
+          rdf:type [ <EvolvedAnatomicalEntity> ] ? ;
+          <subclass_of> @<CellularEvolvedAnatomicalEntity> * ;
+          <part_of> @<EvolvedAnatomicalEntity> ?
+       ) ;
+       rdf:type [ <CellularEvolvedAnatomicalEntity> ] ?
+    )
+}
+
+<Characteristic>  (
+    CLOSED {
+       (  $<Characteristic_tes> rdf:type . * ;
+          rdf:type [ <Characteristic> ] ?
+       )
+    } OR @<CharacteristicAttribute> OR @<CharacteristicValue>
+)
+
+<CharacteristicAttribute> CLOSED {
+    (  $<CharacteristicAttribute_tes> (  &<Characteristic_tes> ;
+          rdf:type [ <Characteristic> ] ?
+       ) ;
+       rdf:type [ <CharacteristicAttribute> ] ?
+    )
+}
+
+<CharacteristicValue> CLOSED {
+    (  $<CharacteristicValue_tes> (  &<Characteristic_tes> ;
+          rdf:type [ <Characteristic> ] ?
+       ) ;
+       rdf:type [ <CharacteristicValue> ] ?
+    )
+}
+
+<ChemicalEntity> CLOSED {
+    (  $<ChemicalEntity_tes> (  &<PhysicalEntity_tes> ;
+          rdf:type [ <PhysicalEntity> ] ? ;
+          &<Organismal_tes> ;
+          rdf:type [ <Organismal> ] ? ;
+          <in_taxon> @<OrganismTaxon> ? ;
+          <never_in_taxon> @<OrganismTaxon> ?
+       ) ;
+       rdf:type [ <ChemicalEntity> ] ?
+    )
+}
+
+<ChemicalEntityAtomicPhenotypicFeature> CLOSED {
+    (  $<ChemicalEntityAtomicPhenotypicFeature_tes> (  &<AtomicPhenotypicFeature_tes> ;
+          rdf:type [ <AtomicPhenotypicFeature> ] ? ;
+          <characteristic_of> @<ChemicalEntity> ?
+       ) ;
+       rdf:type [ <ChemicalEntityAtomicPhenotypicFeature> ] ?
+    )
+}
+
+<Constructed> {
+    (  $<Constructed_tes> (  &<Origin_tes> ;
+          rdf:type [ <Origin> ] ?
+       ) ;
+       rdf:type [ <Constructed> ] ?
+    )
+}
+
+<ConstructedCellType> CLOSED {
+    (  $<ConstructedCellType_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Constructed_tes> ;
+          rdf:type [ <Constructed> ] ? ;
+          <subclass_of> @<ConstructedCellType> * ;
+          <part_of> @<ConstructedCellType> ? ;
+          <analog_of> @<EvolvedCellType> ?
+       ) ;
+       rdf:type [ <ConstructedCellType> ] ?
+    )
+}
+
+<Disease> CLOSED {
+    (  $<Disease_tes> (  &<Organismal_tes> ;
+          rdf:type [ <Organismal> ] ? ;
+          <in_taxon> @<OrganismTaxon> ? ;
+          <never_in_taxon> @<OrganismTaxon> ?
+       ) ;
+       rdf:type [ <Disease> ] ?
+    )
+}
+
+<Entity>  (
+    CLOSED {
+       (  $<Entity_tes> rdf:type . * ;
+          rdf:type [ <Entity> ] ?
+       )
+    } OR @<PhysicalEntityOrProcess>
+)
+
+<EnvironmentalProcess> CLOSED {
+    (  $<EnvironmentalProcess_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <EnvironmentalProcess> ] ?
+    )
+}
+
+<Evolved> {
+    (  $<Evolved_tes> (  &<Origin_tes> ;
+          rdf:type [ <Origin> ] ?
+       ) ;
+       rdf:type [ <Evolved> ] ?
+    )
+}
+
+<EvolvedAnatomicalEntity>  (
+    @<CellularEvolvedAnatomicalEntity> OR @<EvolvedCellType> OR @<GrossEvolvedAnatomicalEntity>
+)
+
+<EvolvedAnatomicalEntity_struct> {
+    (  $<EvolvedAnatomicalEntity_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Evolved_tes> ;
+          rdf:type [ <Evolved> ] ? ;
+          <subclass_of> @<EvolvedAnatomicalEntity> * ;
+          <part_of> @<EvolvedAnatomicalEntity> ? ;
+          <develops_from> @<EvolvedAnatomicalEntity> *
+       ) ;
+       rdf:type [ <EvolvedAnatomicalEntity> ] ?
+    )
+}
+
+<EvolvedCellType>  (
+    CLOSED {
+       (  $<EvolvedCellType_tes> (  &<EvolvedAnatomicalEntity_tes> ;
+             rdf:type [ <EvolvedAnatomicalEntity> ] ? ;
+             <subclass_of> @<EvolvedCellType> * ;
+             <part_of> @<GrossEvolvedAnatomicalEntity> ? ;
+             <develops_from> @<EvolvedCellType> *
+          ) ;
+          rdf:type [ <EvolvedCellType> ] ?
+       )
+    } OR @<SpeciesNeutralEvolvedCellType> OR @<SpeciesSpecificEvolvedCellType>
+)
+
+<Exposure> CLOSED {
+    (  $<Exposure_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ? ;
+          &<Organismal_tes> ;
+          rdf:type [ <Organismal> ] ? ;
+          <in_taxon> @<OrganismTaxon> ? ;
+          <never_in_taxon> @<OrganismTaxon> ?
+       ) ;
+       rdf:type [ <Exposure> ] ?
+    )
+}
+
+<Food> CLOSED {
+    (  $<Food_tes> (  &<MixtureOfChemicalEntities_tes> ;
+          rdf:type [ <MixtureOfChemicalEntities> ] ?
+       ) ;
+       rdf:type [ <Food> ] ?
+    )
+}
+
+<GrossConstructedAnatomicalEntity> CLOSED {
+    (  $<GrossConstructedAnatomicalEntity_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Constructed_tes> ;
+          rdf:type [ <Constructed> ] ? ;
+          <subclass_of> @<GrossConstructedAnatomicalEntity> * ;
+          <part_of> @<GrossConstructedAnatomicalEntity> ? ;
+          <analog_of> @<GrossEvolvedAnatomicalEntity> ?
+       ) ;
+       rdf:type [ <GrossConstructedAnatomicalEntity> ] ?
+    )
+}
+
+<GrossEvolvedAnatomicalEntity>  (
+    CLOSED {
+       (  $<GrossEvolvedAnatomicalEntity_tes> (  &<EvolvedAnatomicalEntity_tes> ;
+             rdf:type [ <EvolvedAnatomicalEntity> ] ? ;
+             <subclass_of> @<EvolvedAnatomicalEntity> * ;
+             <part_of> @<EvolvedAnatomicalEntity> ? ;
+             <develops_from> @<GrossEvolvedAnatomicalEntity> *
+          ) ;
+          rdf:type [ <GrossEvolvedAnatomicalEntity> ] ?
+       )
+    } OR @<SpeciesNeutralGrossEvolvedAnatomicalEntity> OR @<SpeciesSpecificGrossEvolvedAnatomicalEntity>
+)
+
+<GrossPathologicalAnatomicalEntity> CLOSED {
+    (  $<GrossPathologicalAnatomicalEntity_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Abnormal_tes> ;
+          rdf:type [ <Abnormal> ] ? ;
+          <subclass_of> @<GrossPathologicalAnatomicalEntity> * ;
+          <part_of> @<GrossPathologicalAnatomicalEntity> ? ;
+          <pathological_of> @<GrossEvolvedAnatomicalEntity> ?
+       ) ;
+       rdf:type [ <GrossPathologicalAnatomicalEntity> ] ?
+    )
+}
+
+<Information>  (
+    CLOSED {
+       (  $<Information_tes> (  &<Constructed_tes> ;
+             rdf:type [ <Constructed> ] ?
+          ) ;
+          rdf:type [ <Information> ] ?
+       )
+    } OR @<OntologyAxiom> OR @<Publication>
+)
+
+<LifeStage>  (
+    CLOSED {
+       (  $<LifeStage_tes> (  &<Occurrent_tes> ;
+             rdf:type [ <Occurrent> ] ? ;
+             &<Evolved_tes> ;
+             rdf:type [ <Evolved> ] ?
+          ) ;
+          rdf:type [ <LifeStage> ] ?
+       )
+    } OR @<SpeciesNeutralLifeStage> OR @<SpeciesSpecificLifeStage>
+)
+
+<MixtureOfChemicalEntities>  (
+    CLOSED {
+       (  $<MixtureOfChemicalEntities_tes> <has_part> @<ChemicalEntity> ? ;
+          rdf:type [ <MixtureOfChemicalEntities> ] ?
+       )
+    } OR @<Food>
+)
+
+<MolecularActivity> CLOSED {
+    (  $<MolecularActivity_tes> (  &<BiologicalProcessOrMolecularActivity_tes> ;
+          rdf:type [ <BiologicalProcessOrMolecularActivity> ] ?
+       ) ;
+       rdf:type [ <MolecularActivity> ] ?
+    )
+}
+
+<NonOrganismal> {
+    (  $<NonOrganismal_tes> rdf:type . * ;
+       rdf:type [ <NonOrganismal> ] ?
+    )
+}
+
+<Occurrent>  (
+    CLOSED {
+       (  $<Occurrent_tes> (  &<PhysicalEntityOrProcess_tes> ;
+             rdf:type [ <PhysicalEntityOrProcess> ] ?
+          ) ;
+          rdf:type [ <Occurrent> ] ?
+       )
+    } OR @<LifeStage>
+)
+
+<OntologyAxiom> CLOSED {
+    (  $<OntologyAxiom_tes> (  &<Information_tes> ;
+          rdf:type [ <Information> ] ?
+       ) ;
+       rdf:type [ <OntologyAxiom> ] ?
+    )
+}
+
+<OrganismTaxon>  (
+    CLOSED {
+       (  $<OrganismTaxon_tes> rdf:type . * ;
+          rdf:type [ <OrganismTaxon> ] ?
+       )
+    } OR @<BroadOrganismTaxon> OR @<Species>
+)
+
+<Organismal>  (
+    {
+       (  $<Organismal_tes> (  <in_taxon> @<OrganismTaxon> ? ;
+             <never_in_taxon> @<OrganismTaxon> ?
+          ) ;
+          rdf:type [ <Organismal> ] ?
+       )
+    } OR @<SpeciesNeutral> OR @<SpeciesSpecific>
+)
+
+<Origin>  (
+    {
+       (  $<Origin_tes> rdf:type . * ;
+          rdf:type [ <Origin> ] ?
+       )
+    } OR @<Abnormal> OR @<Constructed> OR @<Evolved> OR @<Variant>
+)
+
+<PathologicalCellType> CLOSED {
+    (  $<PathologicalCellType_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Abnormal_tes> ;
+          rdf:type [ <Abnormal> ] ? ;
+          <subclass_of> @<PathologicalCellType> * ;
+          <part_of> @<PathologicalCellType> ? ;
+          <analog_of> @<EvolvedCellType> ?
+       ) ;
+       rdf:type [ <PathologicalCellType> ] ?
+    )
+}
+
+<PathologicalProcess> CLOSED {
+    (  $<PathologicalProcess_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ? ;
+          &<Abnormal_tes> ;
+          rdf:type [ <Abnormal> ] ?
+       ) ;
+       rdf:type [ <PathologicalProcess> ] ?
+    )
+}
+
+<PhysicalEntity>  (
+    CLOSED {
+       (  $<PhysicalEntity_tes> (  &<PhysicalEntityOrProcess_tes> ;
+             rdf:type [ <PhysicalEntityOrProcess> ] ?
+          ) ;
+          rdf:type [ <PhysicalEntity> ] ?
+       )
+    } OR @<AnatomicalEntity> OR @<ChemicalEntity> OR @<PlanetaryEntity>
+)
+
+<PhysicalEntityOrProcess>  (
+    CLOSED {
+       (  $<PhysicalEntityOrProcess_tes> (  &<Entity_tes> ;
+             rdf:type [ <Entity> ] ?
+          ) ;
+          rdf:type [ <PhysicalEntityOrProcess> ] ?
+       )
+    } OR @<Occurrent> OR @<PhysicalEntity> OR @<Process>
+)
+
+<PlanetaryEntity> CLOSED {
+    (  $<PlanetaryEntity_tes> (  &<PhysicalEntity_tes> ;
+          rdf:type [ <PhysicalEntity> ] ?
+       ) ;
+       rdf:type [ <PlanetaryEntity> ] ?
+    )
+}
+
+<Process>  (
+    CLOSED {
+       (  $<Process_tes> (  &<PhysicalEntityOrProcess_tes> ;
+             rdf:type [ <PhysicalEntityOrProcess> ] ?
+          ) ;
+          rdf:type [ <Process> ] ?
+       )
+    } OR @<BiologicalProcessOrMolecularActivity> OR @<EnvironmentalProcess> OR @<Exposure> OR @<PathologicalProcess>
+)
+
+<Publication> CLOSED {
+    (  $<Publication_tes> (  &<Information_tes> ;
+          rdf:type [ <Information> ] ?
+       ) ;
+       rdf:type [ <Publication> ] ?
+    )
+}
+
+<Species> CLOSED {
+    (  $<Species_tes> (  &<OrganismTaxon_tes> ;
+          rdf:type [ <OrganismTaxon> ] ?
+       ) ;
+       rdf:type [ <Species> ] ?
+    )
+}
+
+<SpeciesNeutral> {
+    (  $<SpeciesNeutral_tes> (  &<Organismal_tes> ;
+          rdf:type [ <Organismal> ] ? ;
+          <in_taxon> @<BroadOrganismTaxon> ?
+       ) ;
+       rdf:type [ <SpeciesNeutral> ] ?
+    )
+}
+
+<SpeciesNeutralAbnormalPhenotype> CLOSED {
+    (  $<SpeciesNeutralAbnormalPhenotype_tes> (  &<AbnormalPhenotype_tes> ;
+          rdf:type [ <AbnormalPhenotype> ] ? ;
+          &<SpeciesNeutral_tes> ;
+          rdf:type [ <SpeciesNeutral> ] ?
+       ) ;
+       rdf:type [ <SpeciesNeutralAbnormalPhenotype> ] ?
+    )
+}
+
+<SpeciesNeutralEvolvedCellType> CLOSED {
+    (  $<SpeciesNeutralEvolvedCellType_tes> (  &<EvolvedCellType_tes> ;
+          rdf:type [ <EvolvedCellType> ] ? ;
+          &<SpeciesNeutral_tes> ;
+          rdf:type [ <SpeciesNeutral> ] ? ;
+          <subclass_of> @<SpeciesNeutralEvolvedCellType> * ;
+          <part_of> @<SpeciesNeutralEvolvedCellType> ? ;
+          <develops_from> @<SpeciesNeutralEvolvedCellType> * ;
+          <existence_starts_during> @<SpeciesNeutralLifeStage> ? ;
+          <existence_ends_during> @<SpeciesNeutralLifeStage> ? ;
+          <never_in_taxon> @<OrganismTaxon> ? ;
+          <in_taxon> @<BroadOrganismTaxon> ?
+       ) ;
+       rdf:type [ <SpeciesNeutralEvolvedCellType> ] ?
+    )
+}
+
+<SpeciesNeutralGrossEvolvedAnatomicalEntity> CLOSED {
+    (  $<SpeciesNeutralGrossEvolvedAnatomicalEntity_tes> (  &<GrossEvolvedAnatomicalEntity_tes> ;
+          rdf:type [ <GrossEvolvedAnatomicalEntity> ] ? ;
+          &<SpeciesNeutral_tes> ;
+          rdf:type [ <SpeciesNeutral> ] ? ;
+          <subclass_of> @<SpeciesNeutralGrossEvolvedAnatomicalEntity> * ;
+          <part_of> @<SpeciesNeutralGrossEvolvedAnatomicalEntity> ? ;
+          <develops_from> @<SpeciesNeutralGrossEvolvedAnatomicalEntity> * ;
+          <existence_starts_during> @<SpeciesNeutralLifeStage> ? ;
+          <existence_ends_during> @<SpeciesNeutralLifeStage> ? ;
+          <never_in_taxon> @<OrganismTaxon> ? ;
+          <in_taxon> @<BroadOrganismTaxon> ?
+       ) ;
+       rdf:type [ <SpeciesNeutralGrossEvolvedAnatomicalEntity> ] ?
+    )
+}
+
+<SpeciesNeutralLifeStage> CLOSED {
+    (  $<SpeciesNeutralLifeStage_tes> (  &<LifeStage_tes> ;
+          rdf:type [ <LifeStage> ] ? ;
+          &<SpeciesNeutral_tes> ;
+          rdf:type [ <SpeciesNeutral> ] ? ;
+          <never_in_taxon> @<OrganismTaxon> ? ;
+          <in_taxon> @<BroadOrganismTaxon> ?
+       ) ;
+       rdf:type [ <SpeciesNeutralLifeStage> ] ?
+    )
+}
+
+<SpeciesSpecific> {
+    (  $<SpeciesSpecific_tes> (  &<Organismal_tes> ;
+          rdf:type [ <Organismal> ] ? ;
+          <in_taxon> @<Species> ?
+       ) ;
+       rdf:type [ <SpeciesSpecific> ] ?
+    )
+}
+
+<SpeciesSpecificAbnormalPhenotype> CLOSED {
+    (  $<SpeciesSpecificAbnormalPhenotype_tes> (  &<AbnormalPhenotype_tes> ;
+          rdf:type [ <AbnormalPhenotype> ] ? ;
+          &<SpeciesSpecific_tes> ;
+          rdf:type [ <SpeciesSpecific> ] ?
+       ) ;
+       rdf:type [ <SpeciesSpecificAbnormalPhenotype> ] ?
+    )
+}
+
+<SpeciesSpecificEvolvedCellType> CLOSED {
+    (  $<SpeciesSpecificEvolvedCellType_tes> (  &<EvolvedCellType_tes> ;
+          rdf:type [ <EvolvedCellType> ] ? ;
+          &<SpeciesSpecific_tes> ;
+          rdf:type [ <SpeciesSpecific> ] ? ;
+          <subclass_of> @<SpeciesSpecificEvolvedCellType> * ;
+          <part_of> @<SpeciesSpecificEvolvedCellType> ? ;
+          <develops_from> @<SpeciesSpecificEvolvedCellType> * ;
+          <existence_starts_during> @<LifeStage> ? ;
+          <existence_ends_during> @<LifeStage> ? ;
+          <never_in_taxon> @<OrganismTaxon> ? ;
+          <in_taxon> @<Species> ?
+       ) ;
+       rdf:type [ <SpeciesSpecificEvolvedCellType> ] ?
+    )
+}
+
+<SpeciesSpecificGrossEvolvedAnatomicalEntity> CLOSED {
+    (  $<SpeciesSpecificGrossEvolvedAnatomicalEntity_tes> (  &<GrossEvolvedAnatomicalEntity_tes> ;
+          rdf:type [ <GrossEvolvedAnatomicalEntity> ] ? ;
+          &<SpeciesSpecific_tes> ;
+          rdf:type [ <SpeciesSpecific> ] ? ;
+          <subclass_of> @<GrossEvolvedAnatomicalEntity> * ;
+          <part_of> @<SpeciesSpecificGrossEvolvedAnatomicalEntity> ? ;
+          <develops_from> @<SpeciesSpecificGrossEvolvedAnatomicalEntity> * ;
+          <existence_starts_during> @<LifeStage> ? ;
+          <existence_ends_during> @<LifeStage> ? ;
+          <never_in_taxon> @<OrganismTaxon> ? ;
+          <in_taxon> @<Species> ?
+       ) ;
+       rdf:type [ <SpeciesSpecificGrossEvolvedAnatomicalEntity> ] ?
+    )
+}
+
+<SpeciesSpecificLifeStage> CLOSED {
+    (  $<SpeciesSpecificLifeStage_tes> (  &<LifeStage_tes> ;
+          rdf:type [ <LifeStage> ] ? ;
+          &<SpeciesSpecific_tes> ;
+          rdf:type [ <SpeciesSpecific> ] ? ;
+          <never_in_taxon> @<OrganismTaxon> ? ;
+          <in_taxon> @<Species> ?
+       ) ;
+       rdf:type [ <SpeciesSpecificLifeStage> ] ?
+    )
+}
+
+<Unit> CLOSED {
+    (  $<Unit_tes> rdf:type . * ;
+       rdf:type [ <Unit> ] ?
+    )
+}
+
+<Variant> CLOSED {
+    (  $<Variant_tes> (  &<Origin_tes> ;
+          rdf:type [ <Origin> ] ?
+       ) ;
+       rdf:type [ <Variant> ] ?
+    )
+}
+
+<VariantAnatomicalEntity> {
+    (  $<VariantAnatomicalEntity_tes> (  &<AnatomicalEntity_tes> ;
+          rdf:type [ <AnatomicalEntity> ] ? ;
+          &<Variant_tes> ;
+          rdf:type [ <Variant> ] ?
+       ) ;
+       rdf:type [ <VariantAnatomicalEntity> ] ?
+    )
+}
+
+
+

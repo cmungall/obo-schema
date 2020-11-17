@@ -1,0 +1,2396 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "gross pathological anatomical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross evolved anatomical entity_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/CharacteristicValue",
+      "type" : "CLASS",
+      "lbl" : "characteristic value"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral evolved cell type_develops from"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Uri",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "a complete URI"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "uri"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/ChemicalEntityAtomicPhenotypicFeature",
+      "type" : "CLASS",
+      "lbl" : "chemical entity atomic phenotypic feature"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Uriorcurie",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "a URI or a CURIE"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "uriorcurie"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature",
+      "type" : "CLASS",
+      "lbl" : "atomic trait or phenotypic feature"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross pathological anatomical entity_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType",
+      "type" : "CLASS",
+      "lbl" : "species neutral evolved cell type"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Variant",
+      "type" : "CLASS",
+      "lbl" : "variant"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Publication",
+      "type" : "CLASS",
+      "lbl" : "publication"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/part_of",
+      "type" : "PROPERTY",
+      "lbl" : "part of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/ConstructedCellType",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "in vitro cell type"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "constructed cell type"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "constructed cell type_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross constructed anatomical entity_part of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/part_of",
+      "type" : "PROPERTY",
+      "lbl" : "part_of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType",
+      "type" : "CLASS",
+      "lbl" : "species specific evolved cell type"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities",
+      "type" : "CLASS",
+      "lbl" : "mixture of chemical entities"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "species neutral gross evolved anatomical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/BroadOrganismTaxon",
+      "type" : "CLASS",
+      "lbl" : "broad organism taxon"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "evolved anatomical entity_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "evolved cell type_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/BiologicalProcess",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "pathway"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "biological process"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Food",
+      "type" : "CLASS",
+      "lbl" : "food"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/biological_process_atomic_phenotypic_feature_characteristic_of",
+      "type" : "PROPERTY",
+      "lbl" : "biological process atomic phenotypic feature_characteristic of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/CharacteristicAttribute",
+      "type" : "CLASS",
+      "lbl" : "characteristic attribute"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/never_in_taxon",
+      "type" : "PROPERTY",
+      "lbl" : "never in taxon"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "organoid"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "gross constructed anatomical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross pathological anatomical entity_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_pathological_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross pathological anatomical entity_pathological of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Date",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+          "val" : "URI is dateTime because OWL reasoners don't work with straight date or time"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "a date (year, month and day) in an idealized calendar"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "date"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess",
+      "type" : "CLASS",
+      "lbl" : "physical entity or process"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "gross evolved anatomical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AbormalAnatomicalEntity",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+          "val" : "this is not the same as abnormal morphology etc in HPO"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abormal anatomical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature",
+      "type" : "CLASS",
+      "lbl" : "atomic phenotypic feature"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "cellular evolved anatomical entity_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "species specific evolved cell type_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "the definition of a class or interface"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "class_definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/OntologyAxiom",
+      "type" : "CLASS",
+      "lbl" : "ontology axiom"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral gross evolved anatomical entity_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "cellular evolved anatomical entity_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "evolved anatomical entity_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Unit",
+      "type" : "CLASS",
+      "lbl" : "unit"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Time",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A time object represents a (local) time of day, independent of any particular day"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+          "val" : "URI is dateTime because OWL reasoners don't work with straight date or time"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "time"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_starts_during",
+      "type" : "PROPERTY",
+      "lbl" : "species specific evolved cell type_existence starts during"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "cellular evolved anatomical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral gross evolved anatomical entity_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/abnormal_phenotype_has_part",
+      "type" : "PROPERTY",
+      "lbl" : "abnormal phenotype_has part"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "species specific may also be applicable at broader levels, e.g. genus"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "species specific"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/NonOrganismal",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "an entity or class that is not a part or derived from an organism."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "non organismal"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_ends_during",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral evolved cell type_existence ends during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_analog_of",
+      "type" : "PROPERTY",
+      "lbl" : "pathological cell type_analog of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "species specific gross evolved anatomical entity_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_starts_during",
+      "type" : "PROPERTY",
+      "lbl" : "species specific gross evolved anatomical entity_existence starts during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "constructed cell type_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross constructed anatomical entity_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Nodeidentifier",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A URI, CURIE or BNODE that represents a node in a model."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "nodeidentifier"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/ChemicalEntity",
+      "type" : "CLASS",
+      "lbl" : "chemical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during",
+      "type" : "PROPERTY",
+      "lbl" : "anatomical entity_existence ends during"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Exposure",
+      "type" : "CLASS",
+      "lbl" : "exposure"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_analog_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross constructed anatomical entity_analog of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/analog_of",
+      "type" : "PROPERTY",
+      "lbl" : "analog of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/EnvironmentalProcess",
+      "type" : "CLASS",
+      "lbl" : "environmental process"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Species",
+      "type" : "CLASS",
+      "lbl" : "species"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificAbnormalPhenotype",
+      "type" : "CLASS",
+      "lbl" : "species specific abnormal phenotype"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "evolved cell type_part of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Entity",
+      "type" : "CLASS",
+      "lbl" : "entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Information",
+      "type" : "CLASS",
+      "lbl" : "information"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "species specific evolved cell type_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "species specific gross evolved anatomical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Characteristic",
+      "type" : "CLASS",
+      "lbl" : "characteristic"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AbnormalPhenotype",
+      "type" : "CLASS",
+      "lbl" : "abnormal phenotype"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during",
+      "type" : "PROPERTY",
+      "lbl" : "anatomical entity_existence starts during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/organismal_in_taxon",
+      "type" : "PROPERTY",
+      "lbl" : "organismal_in taxon"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "evolved cell type_develops from"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "anatomical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_characteristic_of",
+      "type" : "PROPERTY",
+      "lbl" : "atomic trait_characteristic of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "anatomical entity_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "anatomical entity_develops from"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "evolved anatomical entity_develops from"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/in_taxon",
+      "type" : "PROPERTY",
+      "lbl" : "in taxon"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/chemical_entity_atomic_phenotypic_feature_characteristic_of",
+      "type" : "PROPERTY",
+      "lbl" : "chemical entity atomic phenotypic feature_characteristic of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/organismal_never_in_taxon",
+      "type" : "PROPERTY",
+      "lbl" : "organismal_never in taxon"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Objectidentifier",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A URI or CURIE that represents an object in the model."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#note",
+          "val" : "Used for inheritence and type checking"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "objectidentifier"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity",
+      "type" : "CLASS",
+      "lbl" : "biological process or molecular activity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/mixture_of_chemical_entities_has_part",
+      "type" : "PROPERTY",
+      "lbl" : "mixture of chemical entities_has part"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/existence_ends_during",
+      "type" : "PROPERTY",
+      "lbl" : "existence ends during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/SubsetDefinition",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "the name and description of a subset"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "subset_definition"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_ends_during",
+      "type" : "PROPERTY",
+      "lbl" : "species specific evolved cell type_existence ends during"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Disease",
+      "type" : "CLASS",
+      "lbl" : "disease"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_starts_during",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral gross evolved anatomical entity_existence starts during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "gross evolved anatomical entity_develops from"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Organismal",
+      "type" : "CLASS",
+      "lbl" : "organismal"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "atomic phenotypic feature_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "gross evolved anatomical entity_part of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Occurrent",
+      "type" : "CLASS",
+      "lbl" : "occurrent"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AtomicTrait",
+      "type" : "CLASS",
+      "lbl" : "atomic trait"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/PlanetaryEntity",
+      "type" : "CLASS",
+      "lbl" : "planetary entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/MolecularActivity",
+      "type" : "CLASS",
+      "lbl" : "molecular activity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/LifeStage",
+      "type" : "CLASS",
+      "lbl" : "life stage"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/topValue",
+      "type" : "PROPERTY",
+      "lbl" : "value"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage",
+      "type" : "CLASS",
+      "lbl" : "species neutral life stage"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "anatomical entity_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "species specific gross evolved anatomical entity_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_starts_during",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral evolved cell type_existence starts during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/characteristic_of",
+      "type" : "PROPERTY",
+      "lbl" : "characteristic of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Datetime",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "The combination of a date and time"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "datetime"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Ncname",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Prefix part of CURIE"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "ncname"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "may still be specific to a broader taxonomic grouping, e.g. metazoa. Must explicitly group other ontologies"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "species neutral"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "pathological cell type_part of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_in_taxon",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral_in taxon"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "species specific evolved cell type_develops from"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "develops from"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/anatomical_atomic_phenotypic_feature_characteristic_of",
+      "type" : "PROPERTY",
+      "lbl" : "anatomical atomic phenotypic feature_characteristic of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_ends_during",
+      "type" : "PROPERTY",
+      "lbl" : "species specific gross evolved anatomical entity_existence ends during"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Double",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A real number that conforms to the xsd:double specification"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "double"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of",
+      "type" : "PROPERTY",
+      "lbl" : "atomic phenotypic feature_characteristic of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_in_taxon",
+      "type" : "PROPERTY",
+      "lbl" : "species specific_in taxon"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/AnatomicalAtomicPhenotypicFeature",
+      "type" : "CLASS",
+      "lbl" : "anatomical atomic phenotypic feature"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral gross evolved anatomical entity_develops from"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_ends_during",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral gross evolved anatomical entity_existence ends during"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/VariantAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "variant anatomical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity",
+      "type" : "CLASS",
+      "lbl" : "evolved anatomical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "pathological cell type_subclass of"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "atomic trait_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificLifeStage",
+      "type" : "CLASS",
+      "lbl" : "species specific life stage"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Float",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A real number that conforms to the xsd:float specification"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "float"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "the definition of a property or a slot"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "slot_definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/BiologicalProcessAtomicPhenotypicFeature",
+      "type" : "CLASS",
+      "lbl" : "biological process atomic phenotypic feature"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/has_part",
+      "type" : "PROPERTY",
+      "lbl" : "has part"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/PathologicalProcess",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+          "val" : "this is not the same as abnormal processes etc in HPO"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "pathological process"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/EvolvedCellType",
+      "type" : "CLASS",
+      "lbl" : "evolved cell type"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_part_of",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral evolved cell type_part of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/existence_starts_during",
+      "type" : "PROPERTY",
+      "lbl" : "existence starts during"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralAbnormalPhenotype",
+      "type" : "CLASS",
+      "lbl" : "species neutral abnormal phenotype"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/pathological_of",
+      "type" : "PROPERTY",
+      "lbl" : "pathological of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Origin",
+      "type" : "CLASS",
+      "lbl" : "origin"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/String",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A character string"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "string"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_subclass_of",
+      "type" : "PROPERTY",
+      "lbl" : "species neutral evolved cell type_subclass of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Evolved",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "canonical"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "normal"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "evolved"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A data type definition."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "type_definition"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Boolean",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A binary (true or false) value"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "boolean"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/OrganismTaxon",
+      "type" : "CLASS",
+      "lbl" : "organism taxon"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_develops_from",
+      "type" : "PROPERTY",
+      "lbl" : "species specific gross evolved anatomical entity_develops from"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Constructed",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "human constructed"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "social"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "constructed"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/PathologicalCellType",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "abnormal cell type"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "pathological cell type"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Abnormal",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "non-canonical"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "aberrant"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "pathological"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/PhysicalEntity",
+      "type" : "CLASS",
+      "lbl" : "physical entity"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_analog_of",
+      "type" : "PROPERTY",
+      "lbl" : "constructed cell type_analog of"
+    }, {
+      "id" : "http://purl.obolibrary.org/oboschema/Process",
+      "type" : "CLASS",
+      "lbl" : "process"
+    }, {
+      "id" : "https://w3id.org/biolink/biolinkml/meta/types/Integer",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "An integer"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "integer"
+    } ],
+    "edges" : [ {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_starts_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_develops_from"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Variant",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Process",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/PhysicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Exposure",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_ends_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificAbnormalPhenotype",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AtomicTrait",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/OrganismTaxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_ends_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Food",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/mixture_of_chemical_entities_has_part",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/has_part"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PlanetaryEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralAbnormalPhenotype",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/in_taxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_atomic_phenotypic_feature_characteristic_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/NonOrganismal",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Information",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_characteristic_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/characteristic_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/abnormal_phenotype_has_part",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/has_part"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EnvironmentalProcess",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_analog_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/analog_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/VariantAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_part_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Constructed",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_ends_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/CharacteristicAttribute",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Characteristic"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Double",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_starts_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_in_taxon",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/organismal_in_taxon"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Species",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/EvolvedCellType"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/existence_starts_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_starts_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BroadOrganismTaxon",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/OrganismTaxon"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ChemicalEntityAtomicPhenotypicFeature",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/existence_ends_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AbormalAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Abnormal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/biological_process_atomic_phenotypic_feature_characteristic_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/organismal_never_in_taxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_pathological_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_ends_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PlanetaryEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/PhysicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificAbnormalPhenotype",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/OntologyAxiom",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Time",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ChemicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/PhysicalEntity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_starts_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Disease",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/characteristic_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Exposure",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Process"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AbormalAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/LifeStage",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_analog_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/LifeStage"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_characteristic_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_analog_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_ends_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Abnormal",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Constructed"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Evolved",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Origin"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_in_taxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_develops_from"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_develops_from"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/abnormal_phenotype_has_part",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcessAtomicPhenotypicFeature",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Characteristic",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AnatomicalAtomicPhenotypicFeature",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_develops_from"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_in_taxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Nodeidentifier",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_ends_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ConstructedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_atomic_phenotypic_feature_characteristic_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/organismal_in_taxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PathologicalProcess",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Abnormal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/chemical_entity_atomic_phenotypic_feature_characteristic_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Food",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Disease",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/develops_from"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Variant",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Origin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/CharacteristicValue",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/VariantAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Variant"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/String",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcess",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/CharacteristicAttribute",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralAbnormalPhenotype",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AbnormalPhenotype"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PathologicalCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Abnormal"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Abnormal"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Constructed",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Organismal",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Occurrent",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Publication",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/MolecularActivity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Datetime",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralAbnormalPhenotype",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/existence_starts_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/OntologyAxiom",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Information"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EvolvedCellType",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/biological_process_atomic_phenotypic_feature_characteristic_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PhysicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/EvolvedCellType"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Publication",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Information"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PathologicalProcess",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Process"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_develops_from"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_pathological_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/pathological_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_analog_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/analog_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Organismal",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AbnormalPhenotype",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Uriorcurie",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_starts_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Process"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ConstructedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Constructed"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Boolean",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BroadOrganismTaxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_analog_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/analog_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Entity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificLifeStage",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/LifeStage"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Origin",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/LifeStage",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Occurrent"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificAbnormalPhenotype",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AbnormalPhenotype"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PathologicalCellType",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_starts_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Date",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificLifeStage",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Evolved",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ChemicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Abnormal",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Origin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificLifeStage",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EnvironmentalProcess",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Process"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Evolved"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_starts_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_part_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/has_part",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_starts_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AtomicTrait",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AnatomicalAtomicPhenotypicFeature",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/analog_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Species",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/OrganismTaxon"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ConstructedCellType",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/LifeStage",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Evolved"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Origin",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EvolvedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AbnormalPhenotype",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcessAtomicPhenotypicFeature",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Unit",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/organismal_in_taxon",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/in_taxon"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Constructed",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Origin"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Float",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Evolved"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Abnormal",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Exposure",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_ends_during",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/CharacteristicValue",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Characteristic"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Evolved",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/mixin"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PathologicalProcess",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Process",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_in_taxon",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/organismal_in_taxon"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecific"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/never_in_taxon",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_ends_during",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ChemicalEntityAtomicPhenotypicFeature",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/VariantAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/NonOrganismal",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/mixture_of_chemical_entities_has_part",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/ChemicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Information",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Constructed"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/MolecularActivity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_develops_from"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PathologicalCellType",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Integer",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AbnormalPhenotype",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Abnormal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/AbormalAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/BiologicalProcess",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_analog_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/oboschema/existence_ends_during"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_develops_from",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_develops_from",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_develops_from"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Objectidentifier",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Ncname",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/organismal_never_in_taxon",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/never_in_taxon"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/chemical_entity_atomic_phenotypic_feature_characteristic_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_part_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_part_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/PhysicalEntity",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/characteristic_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Entity",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/ClassDefinition"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutral",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/Organismal"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/types/Uri",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/TypeDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_subclass_of",
+      "pred" : "subPropertyOf",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of"
+    }, {
+      "sub" : "http://purl.obolibrary.org/oboschema/Occurrent",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_subclass_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    }, {
+      "sub" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_part_of",
+      "pred" : "type",
+      "obj" : "https://w3id.org/biolink/biolinkml/meta/SlotDefinition"
+    } ],
+    "id" : "file:/Users/cjm/repos/obo-schema/src/schema/obo-schema",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/publicdomain/zero/1.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "OBO Schema Map"
+      }, {
+        "pred" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "val" : "obo-schema"
+      }, {
+        "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+        "val" : "A high level map of OBO classes and how they connect"
+      }, {
+        "pred" : "https://w3id.org/biolink/biolinkml/meta/generation_date",
+        "val" : "2020-11-17 13:14"
+      }, {
+        "pred" : "https://w3id.org/biolink/biolinkml/meta/metamodel_version",
+        "val" : "1.6.0"
+      }, {
+        "pred" : "https://w3id.org/biolink/biolinkml/meta/source_file",
+        "val" : "obo-schema.yaml"
+      }, {
+        "pred" : "https://w3id.org/biolink/biolinkml/meta/source_file_date",
+        "val" : "Tue Nov 17 13:14:03 2020"
+      }, {
+        "pred" : "https://w3id.org/biolink/biolinkml/meta/source_file_size",
+        "val" : "12035"
+      } ]
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_starts_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/LifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/organismal_in_taxon",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/Organismal" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/OrganismTaxon" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_characteristic_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AtomicTrait" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/Entity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/in_taxon",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/OrganismTaxon" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/chemical_entity_atomic_phenotypic_feature_characteristic_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/ChemicalEntityAtomicPhenotypicFeature" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/ChemicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/organismal_never_in_taxon",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/Organismal" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/OrganismTaxon" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/mixture_of_chemical_entities_has_part",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/ChemicalEntity" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/oboschema/existence_ends_during",
+      "rangeClassIds" : [ "https://w3id.org/biolink/biolinkml/meta/types/String" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/part_of",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_ends_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/LifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/ConstructedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/ConstructedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_starts_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/oboschema/part_of",
+      "rangeClassIds" : [ "https://w3id.org/biolink/biolinkml/meta/types/String" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/CharacteristicValue" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_evolved_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/oboschema/subclass_of",
+      "rangeClassIds" : [ "https://w3id.org/biolink/biolinkml/meta/types/String" ],
+      "allValuesFromEdges" : [ {
+        "sub" : "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/ConstructedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/ConstructedCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/CharacteristicValue"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/PathologicalCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/PathologicalCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/EvolvedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/EvolvedCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/AtomicTrait",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/CharacteristicAttribute"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/subclass_of",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType"
+      } ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/biological_process_atomic_phenotypic_feature_characteristic_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/BiologicalProcessAtomicPhenotypicFeature" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/BiologicalProcess" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/never_in_taxon",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/OrganismTaxon" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/characteristic_of",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_starts_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_pathological_anatomical_entity_pathological_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/PathologicalCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/PathologicalCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_in_taxon",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutral" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/BroadOrganismTaxon" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_ends_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/LifeStage" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/oboschema/develops_from",
+      "rangeClassIds" : [ "https://w3id.org/biolink/biolinkml/meta/types/String" ],
+      "allValuesFromEdges" : [ {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/EvolvedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/EvolvedCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/AnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType"
+      }, {
+        "sub" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity",
+        "pred" : "http://purl.obolibrary.org/oboschema/develops_from",
+        "obj" : "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity"
+      } ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/anatomical_atomic_phenotypic_feature_characteristic_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalAtomicPhenotypicFeature" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/atomic_phenotypic_feature_characteristic_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_in_taxon",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecific" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/Species" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/cellular_evolved_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_existence_ends_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/evolved_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/PathologicalCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/PathologicalCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/atomic_trait_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AtomicTrait" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/CharacteristicAttribute" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_existence_starts_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/LifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_gross_evolved_anatomical_entity_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/has_part",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/abnormal_phenotype_has_part",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AbnormalPhenotype" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/oboschema/existence_starts_during",
+      "rangeClassIds" : [ "https://w3id.org/biolink/biolinkml/meta/types/String" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/pathological_of",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_existence_ends_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_neutral_evolved_cell_type_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/pathological_cell_type_analog_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/PathologicalCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_existence_starts_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/LifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/ConstructedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/ConstructedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/anatomical_entity_existence_ends_during",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/AnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/LifeStage" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/gross_constructed_anatomical_entity_analog_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/oboschema/analog_of",
+      "rangeClassIds" : [ "https://w3id.org/biolink/biolinkml/meta/types/String" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_gross_evolved_anatomical_entity_develops_from",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/evolved_cell_type_part_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/constructed_cell_type_analog_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/ConstructedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/EvolvedCellType" ]
+    }, {
+      "predicateId" : "https://w3id.org/biolink/biolinkml/meta/species_specific_evolved_cell_type_subclass_of",
+      "domainClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType" ]
+    } ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}

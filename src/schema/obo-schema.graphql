@@ -1,0 +1,391 @@
+interface Abnormal
+  {
+  }
+
+type AbnormalPhenotype implements Abnormal, Organismal
+  {
+    hasPart: AtomicPhenotypicFeature
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type AbormalAnatomicalEntity implements Abnormal
+  {
+    subclassOf: [AnatomicalEntity]
+    partOf: AnatomicalEntity
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+  }
+
+type AnatomicalAtomicPhenotypicFeature
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+    subclassOf: [CharacteristicValue]
+    characteristicOf: EvolvedAnatomicalEntity
+  }
+
+interface AnatomicalEntity
+  {
+    subclassOf: [AnatomicalEntity]
+    partOf: AnatomicalEntity
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+  }
+
+type AtomicPhenotypicFeature
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+    subclassOf: [CharacteristicValue]
+    characteristicOf: PhysicalEntityOrProcess
+  }
+
+type AtomicTrait
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+    subclassOf: [CharacteristicAttribute]
+    characteristicOf: Entity
+  }
+
+type AtomicTraitOrPhenotypicFeature implements Organismal
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type BiologicalProcess
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type BiologicalProcessAtomicPhenotypicFeature
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+    subclassOf: [CharacteristicValue]
+    characteristicOf: BiologicalProcess
+  }
+
+type BiologicalProcessOrMolecularActivity implements Organismal, Evolved
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type BroadOrganismTaxon
+  {
+  }
+
+type CellularEvolvedAnatomicalEntity
+  {
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    developsFrom: [EvolvedAnatomicalEntity]
+    subclassOf: [CellularEvolvedAnatomicalEntity]
+    partOf: EvolvedAnatomicalEntity
+  }
+
+type Characteristic
+  {
+  }
+
+type CharacteristicAttribute
+  {
+  }
+
+type CharacteristicValue
+  {
+  }
+
+type ChemicalEntity implements Organismal
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type ChemicalEntityAtomicPhenotypicFeature
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+    subclassOf: [CharacteristicValue]
+    characteristicOf: ChemicalEntity
+  }
+
+interface Constructed
+  {
+  }
+
+type ConstructedCellType implements Constructed
+  {
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [ConstructedCellType]
+    partOf: ConstructedCellType
+    analogOf: EvolvedCellType
+  }
+
+type Disease implements Organismal
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type Entity
+  {
+  }
+
+type EnvironmentalProcess
+  {
+  }
+
+interface Evolved
+  {
+  }
+
+type EvolvedAnatomicalEntity implements Evolved
+  {
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [EvolvedAnatomicalEntity]
+    partOf: EvolvedAnatomicalEntity
+    developsFrom: [EvolvedAnatomicalEntity]
+  }
+
+type EvolvedCellType
+  {
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [EvolvedCellType]
+    partOf: GrossEvolvedAnatomicalEntity
+    developsFrom: [EvolvedCellType]
+  }
+
+type Exposure implements Organismal
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type Food
+  {
+    hasPart: ChemicalEntity
+  }
+
+type GrossConstructedAnatomicalEntity implements Constructed
+  {
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [GrossConstructedAnatomicalEntity]
+    partOf: GrossConstructedAnatomicalEntity
+    analogOf: GrossEvolvedAnatomicalEntity
+  }
+
+type GrossEvolvedAnatomicalEntity
+  {
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [EvolvedAnatomicalEntity]
+    partOf: EvolvedAnatomicalEntity
+    developsFrom: [GrossEvolvedAnatomicalEntity]
+  }
+
+type GrossPathologicalAnatomicalEntity implements Abnormal
+  {
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [GrossPathologicalAnatomicalEntity]
+    partOf: GrossPathologicalAnatomicalEntity
+    pathologicalOf: GrossEvolvedAnatomicalEntity
+  }
+
+type Information implements Constructed
+  {
+  }
+
+type LifeStage implements Evolved
+  {
+  }
+
+type MixtureOfChemicalEntities
+  {
+    hasPart: ChemicalEntity
+  }
+
+type MolecularActivity
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+interface NonOrganismal
+  {
+  }
+
+type Occurrent
+  {
+  }
+
+type OntologyAxiom
+  {
+  }
+
+type OrganismTaxon
+  {
+  }
+
+interface Organismal
+  {
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+interface Origin
+  {
+  }
+
+type PathologicalCellType implements Abnormal
+  {
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    subclassOf: [PathologicalCellType]
+    partOf: PathologicalCellType
+    analogOf: EvolvedCellType
+  }
+
+type PathologicalProcess implements Abnormal
+  {
+  }
+
+type PhysicalEntity
+  {
+  }
+
+type PhysicalEntityOrProcess
+  {
+  }
+
+type PlanetaryEntity
+  {
+  }
+
+type Process
+  {
+  }
+
+type Publication
+  {
+  }
+
+type Species
+  {
+  }
+
+interface SpeciesNeutral
+  {
+    neverInTaxon: OrganismTaxon
+    inTaxon: BroadOrganismTaxon
+  }
+
+type SpeciesNeutralAbnormalPhenotype implements SpeciesNeutral
+  {
+    hasPart: AtomicPhenotypicFeature
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type SpeciesNeutralEvolvedCellType implements SpeciesNeutral
+  {
+    subclassOf: [SpeciesNeutralEvolvedCellType]
+    partOf: SpeciesNeutralEvolvedCellType
+    developsFrom: [SpeciesNeutralEvolvedCellType]
+    existenceStartsDuring: SpeciesNeutralLifeStage
+    existenceEndsDuring: SpeciesNeutralLifeStage
+    neverInTaxon: OrganismTaxon
+    inTaxon: BroadOrganismTaxon
+  }
+
+type SpeciesNeutralGrossEvolvedAnatomicalEntity implements SpeciesNeutral
+  {
+    subclassOf: [SpeciesNeutralGrossEvolvedAnatomicalEntity]
+    partOf: SpeciesNeutralGrossEvolvedAnatomicalEntity
+    developsFrom: [SpeciesNeutralGrossEvolvedAnatomicalEntity]
+    existenceStartsDuring: SpeciesNeutralLifeStage
+    existenceEndsDuring: SpeciesNeutralLifeStage
+    neverInTaxon: OrganismTaxon
+    inTaxon: BroadOrganismTaxon
+  }
+
+type SpeciesNeutralLifeStage implements SpeciesNeutral
+  {
+    neverInTaxon: OrganismTaxon
+    inTaxon: BroadOrganismTaxon
+  }
+
+interface SpeciesSpecific
+  {
+    neverInTaxon: OrganismTaxon
+    inTaxon: Species
+  }
+
+type SpeciesSpecificAbnormalPhenotype implements SpeciesSpecific
+  {
+    hasPart: AtomicPhenotypicFeature
+    inTaxon: OrganismTaxon
+    neverInTaxon: OrganismTaxon
+  }
+
+type SpeciesSpecificEvolvedCellType implements SpeciesSpecific
+  {
+    subclassOf: [SpeciesSpecificEvolvedCellType]
+    partOf: SpeciesSpecificEvolvedCellType
+    developsFrom: [SpeciesSpecificEvolvedCellType]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    neverInTaxon: OrganismTaxon
+    inTaxon: Species
+  }
+
+type SpeciesSpecificGrossEvolvedAnatomicalEntity implements SpeciesSpecific
+  {
+    subclassOf: [GrossEvolvedAnatomicalEntity]
+    partOf: SpeciesSpecificGrossEvolvedAnatomicalEntity
+    developsFrom: [SpeciesSpecificGrossEvolvedAnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+    neverInTaxon: OrganismTaxon
+    inTaxon: Species
+  }
+
+type SpeciesSpecificLifeStage implements SpeciesSpecific
+  {
+    neverInTaxon: OrganismTaxon
+    inTaxon: Species
+  }
+
+type Unit
+  {
+  }
+
+type Variant
+  {
+  }
+
+type VariantAnatomicalEntity implements Variant
+  {
+    subclassOf: [AnatomicalEntity]
+    partOf: AnatomicalEntity
+    developsFrom: [AnatomicalEntity]
+    existenceStartsDuring: LifeStage
+    existenceEndsDuring: LifeStage
+  }
+
+

@@ -1,0 +1,543 @@
+id: obo-schema
+title: OBO Schema Map
+description: >-
+  A high level map of OBO classes and how they connect
+
+license: https://creativecommons.org/publicdomain/zero/1.0/
+version: 0.0.1
+
+prefixes:
+  oboschema: http://purl.obolibrary.org/oboschema/
+  schema: http://schema.org/
+  dcterms: http://purl.org/dc/terms/
+  biolinkml: https://w3id.org/biolink/biolinkml/
+  
+default_prefix: oboschema
+default_range: string
+
+default_curi_maps:
+  - obo_context
+  - semweb_context
+  
+imports:
+  - biolinkml:types
+
+classes:
+
+  entity:
+  physical entity or process:
+    is_a: entity
+  
+  occurrent:
+    is_a: physical entity or process
+  process:
+    is_a: physical entity or process
+  physical entity:
+    is_a: physical entity or process
+    
+  organism taxon:
+  
+  species:
+    is_a: organism taxon
+  
+  broad organism taxon:
+    is_a: organism taxon
+  
+  unit:
+    id_prefixes:
+      - UO
+      
+  characteristic:
+    id_prefixes:
+      - PATO
+      
+  characteristic attribute:
+    is_a: characteristic
+    
+  characteristic value:
+    is_a: characteristic
+  
+  disease:
+    mixins:
+      - organismal
+    id_prefixes:
+      - MONDO
+      - DOID
+      - NCIT
+      
+  abnormal phenotype:
+    mixins:
+      - abnormal
+      - organismal
+    slot_usage:
+      has part:
+        range: atomic phenotypic feature
+  
+  species specific abnormal phenotype:
+    is_a: abnormal phenotype
+    mixins:
+      - species specific
+    id_prefixes:
+      - HP
+      - MP
+      - ZP
+      - XPO
+  
+  species neutral abnormal phenotype:
+    is_a: abnormal phenotype
+    mixins:
+      - species neutral
+    id_prefixes:
+      - UPHENO
+      - NCIT
+  
+  atomic trait or phenotypic feature:
+    mixins:
+      - organismal
+    union_of:
+      - atomic phenotypic feature
+      - atomic trait
+      
+  atomic phenotypic feature:
+    is_a: atomic trait or phenotypic feature
+    slot_usage:
+      subclass of:
+        range: characteristic value
+      characteristic of:
+        range: physical entity or process
+          
+  atomic trait:
+    is_a: atomic trait or phenotypic feature
+    slot_usage:
+      subclass of:
+        range: characteristic attribute
+      characteristic of:
+        range: entity
+    id_prefixes:
+      - VT
+      - OBA
+      - TO
+          
+  anatomical atomic phenotypic feature:
+    is_a: atomic phenotypic feature
+    slot_usage:
+      characteristic of:
+        range: evolved anatomical entity
+          
+  chemical entity atomic phenotypic feature:
+    is_a: atomic phenotypic feature
+    slot_usage:
+      characteristic of:
+        range: chemical entity
+          
+  biological process atomic phenotypic feature:
+    is_a: atomic phenotypic feature
+    slot_usage:
+      characteristic of:
+        range: biological process
+          
+  biological process or molecular activity:
+    mixins:
+      - organismal
+      - evolved
+    is_a: process
+    union_of:
+      - biological process
+      - molecular activity
+      
+  biological process:
+    aliases:
+      - pathway
+    is_a: biological process or molecular activity
+    id_prefixes:
+      - GO
+      - NCIT
+      
+  molecular activity:
+    is_a: biological process or molecular activity
+    id_prefixes:
+      - GO
+  
+  chemical entity:
+    is_a: physical entity
+    mixins:
+      - organismal  # most are not specific but some e.g. natural products might be
+    id_prefixes:
+      - CHEBI
+      - NCIT
+  
+  mixture of chemical entities:
+    id_prefixes:
+      - CHEBI
+      - ENVO
+    slot_usage:
+      has part:
+        range:
+          chemical entity  # TODO - stoichiometry
+  
+  food:
+    is_a: mixture of chemical entities
+        
+  pathological process:
+    is_a: process
+    mixins:
+      - abnormal
+    notes:
+      - this is not the same as abnormal processes etc in HPO
+    id_prefixes:
+      - MPATH
+      - NCIT
+  
+  life stage:
+    is_a: occurrent
+    mixins:
+      - evolved
+      
+  species specific life stage:
+    is_a: life stage
+    mixins:
+      - species specific
+    id_prefixes:  # TODO - list all
+      - ZFS
+      - WBls
+      - FBbt
+      
+  species neutral life stage:
+    is_a: life stage
+    mixins:
+      - species neutral
+    id_prefixes:
+      - UBERON
+      - PO
+      
+  anatomical entity:
+    is_a: physical entity
+    abstract: true
+    slot_usage:
+      subclass of:
+        range: anatomical entity  # except for root
+      part of:
+        range: anatomical entity  # except for root
+      develops from:
+        range: anatomical entity
+      existence starts during:
+        range: life stage
+      existence ends during:
+        range: life stage
+  
+  variant anatomical entity:
+    abstract: true
+    is_a: anatomical entity
+    mixins:
+      - variant
+    
+  abormal anatomical entity:
+    abstract: true
+    is_a: anatomical entity
+    mixins:
+      - abnormal
+    notes:
+      - this is not the same as abnormal morphology etc in HPO
+    id_prefixes:
+      - MPATH
+      - NCIT
+    
+  evolved anatomical entity:
+    abstract: true
+    is_a: anatomical entity
+    mixins:
+      - evolved
+    slot_usage:
+      subclass of:
+        range: evolved anatomical entity  # except for root
+      part of:
+        range: evolved anatomical entity  # except for root
+      develops from:
+        range: evolved anatomical entity
+  
+  # CELL COMPONENTS; TODO ss/sn
+  cellular evolved anatomical entity:
+    is_a: evolved anatomical entity
+    slot_usage:
+      subclass of:
+        range: cellular evolved anatomical entity  # except for root
+      part of:
+        range: evolved anatomical entity  # except for root; also restrict
+    id_prefixes:
+      - GO
+      - NCIT
+        
+  # GROSS ANATOMY
+  gross evolved anatomical entity:
+    is_a: evolved anatomical entity
+    slot_usage:
+      subclass of:
+        range: evolved anatomical entity  # except for root
+      part of:
+        range: evolved anatomical entity  # except for root
+      develops from:
+        range: gross evolved anatomical entity  # zygote?
+  
+  gross constructed anatomical entity:
+    aliases:
+      - organoid
+    is_a: anatomical entity
+    mixins:
+      - constructed
+    slot_usage:
+      subclass of:
+        range: gross constructed anatomical entity  # except for root
+      part of:
+        range: gross constructed anatomical entity  # except for root
+      analog of:
+        range: gross evolved anatomical entity  # zygote?
+  
+  gross pathological anatomical entity:
+    is_a: anatomical entity
+    mixins:
+      - abnormal
+    slot_usage:
+      subclass of:
+        range: gross pathological anatomical entity  # except for root
+      part of:
+        range: gross pathological anatomical entity  # except for root
+      pathological of:
+        range: gross evolved anatomical entity  # zygote?
+  
+  species neutral gross evolved anatomical entity:
+    is_a: gross evolved anatomical entity
+    mixins:
+      - species neutral
+    slot_usage:
+      subclass of:
+        range: species neutral gross evolved anatomical entity  # except for root
+      part of:
+        range: species neutral gross evolved anatomical entity  # except for root
+      develops from:
+        range: species neutral gross evolved anatomical entity
+      existence starts during:
+        range: species neutral life stage
+      existence ends during:
+        range: species neutral life stage
+    id_prefixes:
+      - UBERON
+      - PO
+      - FAO
+      - NCIT
+  
+  species specific gross evolved anatomical entity:
+    is_a: gross evolved anatomical entity
+    mixins:
+      - species specific
+    slot_usage:
+      subclass of:
+        range: gross evolved anatomical entity  # except for root
+      part of:
+        range: species specific gross evolved anatomical entity  # except for root
+      develops from:
+        range: species specific gross evolved anatomical entity
+      existence starts during:
+        range: life stage  # can use sn
+      existence ends during:
+        range: life stage  # can use sn
+    id_prefixes:
+      - ZFA
+      - FMA
+      - XAO
+      - FBbt
+      - WBbt
+      - EMAPA
+      - MA
+      - DDANAT
+  
+  # CELL TYPE
+  evolved cell type:
+    is_a: evolved anatomical entity
+    slot_usage:
+      subclass of:
+        range: evolved cell type  # except for root
+      part of:
+        range: gross evolved anatomical entity  # except for root
+      develops from:
+        range: evolved cell type
+  
+  constructed cell type:
+    aliases:
+      - in vitro cell type
+    is_a: anatomical entity
+    mixins:
+      - constructed
+    slot_usage:
+      subclass of:
+        range: constructed cell type  # except for root
+      part of:
+        range: constructed cell type  # except for root
+      analog of:
+        range: evolved cell type
+  
+  pathological cell type:
+    aliases:
+      - abnormal cell type
+    is_a: anatomical entity
+    mixins:
+      - abnormal
+    slot_usage:
+      subclass of:
+        range: pathological cell type  # except for root
+      part of:
+        range: pathological cell type  # except for root
+      analog of:
+        range: evolved cell type
+    id_prefixes:
+      - CL
+  
+  species neutral evolved cell type:
+    is_a: evolved cell type
+    mixins:
+      - species neutral
+    slot_usage:
+      subclass of:
+        range: species neutral evolved cell type  # except for root
+      part of:
+        range: species neutral evolved cell type  # except for root
+      develops from:
+        range: species neutral evolved cell type
+      existence starts during:
+        range: species neutral life stage
+      existence ends during:
+        range: species neutral life stage
+    id_prefixes:
+      - CL
+      - PO
+  
+  species specific evolved cell type:
+    is_a: evolved cell type
+    mixins:
+      - species specific
+    slot_usage:
+      subclass of:
+        range: species specific evolved cell type  # except for root
+      part of:
+        range: species specific evolved cell type  # except for root
+      develops from:
+        range: species specific evolved cell type
+      existence starts during:
+        range: life stage  # can use sn
+      existence ends during:
+        range: life stage  # can use sn
+    id_prefixes:
+      - ZFA
+      - FMA
+      - XAO
+      - FBbt
+      - WBbt
+      - DDANAT
+  
+  exposure:
+    mixins:
+      - organismal
+    is_a: process
+    id_prefixes:
+      - ECTO
+      
+  planetary entity:
+    is_a: physical entity
+    id_prefixes:
+      - ENVO
+      
+  environmental process:
+    is_a: process
+    id_prefixes:
+      - ENVO
+  
+  information:
+    mixins:
+      - constructed
+    id_prefixes:
+      - IAO
+      
+  publication:
+    is_a: information
+    id_prefixes:
+      - PMID
+  
+  ontology axiom:
+    is_a: information
+    
+      
+  ## mixins
+  
+  non organismal:
+    mixin: true
+    description: >-
+      an entity or class that is not a part or derived from an organism.
+      
+  organismal:
+    mixin: true
+    slot_usage:
+      in taxon:
+        range: organism taxon
+      never in taxon:
+        range: organism taxon
+        
+  species specific:
+    is_a: organismal
+    mixin: true
+    description: >-
+      species specific may also be applicable at broader levels, e.g. genus
+    slot_usage:
+      in taxon:
+        range: species
+      
+  species neutral:
+    is_a: organismal
+    mixin: true
+    description: >-
+      may still be specific to a broader taxonomic grouping, e.g. metazoa. Must explicitly group other ontologies
+    slot_usage:
+      in taxon:
+        range: broad organism taxon
+
+  origin:
+    mixin: true
+  
+  constructed:
+    mixin: true
+    is_a: origin
+    aliases:
+      - social
+      - human constructed
+      
+  variant:
+    is_a: origin
+  
+  abnormal:
+    mixin: true
+    is_a: origin
+    aliases:
+      - non-canonical
+      - pathological
+      - aberrant
+      
+  evolved:
+    mixin: true
+    is_a: origin
+    aliases:
+      - canonical
+      - normal
+  
+slots:
+
+  subclass of:
+    multivalued: true
+  part_of:
+    multivalued: true
+  develops from:
+    multivalued: true
+  analog of:
+    multivalued: false
+  existence starts during:
+    multivalued: false
+  existence ends during:
+    multivalued: false
+    

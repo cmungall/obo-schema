@@ -1,0 +1,1311 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix meta: <https://w3id.org/biolink/biolinkml/meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/oboschema/AbormalAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "abormal anatomical entity" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Abnormal>,
+        <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    skos:editorialNote "this is not the same as abnormal morphology etc in HPO" .
+
+<http://purl.obolibrary.org/oboschema/Disease> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "disease" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Organismal> .
+
+<http://purl.obolibrary.org/oboschema/EnvironmentalProcess> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "environmental process" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Process> .
+
+<http://purl.obolibrary.org/oboschema/Exposure> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "exposure" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Organismal>,
+        <http://purl.obolibrary.org/oboschema/Process> .
+
+<http://purl.obolibrary.org/oboschema/Food> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "food" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities> .
+
+<http://purl.obolibrary.org/oboschema/MolecularActivity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "molecular activity" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity> .
+
+<http://purl.obolibrary.org/oboschema/NonOrganismal> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "non organismal" ;
+    rdfs:subClassOf meta:mixin ;
+    skos:definition "an entity or class that is not a part or derived from an organism." .
+
+<http://purl.obolibrary.org/oboschema/OntologyAxiom> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "ontology axiom" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Information> .
+
+<http://purl.obolibrary.org/oboschema/PathologicalProcess> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "pathological process" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Abnormal>,
+        <http://purl.obolibrary.org/oboschema/Process> ;
+    skos:editorialNote "this is not the same as abnormal processes etc in HPO" .
+
+<http://purl.obolibrary.org/oboschema/PlanetaryEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "planetary entity" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/PhysicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/Publication> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "publication" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Information> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesNeutralAbnormalPhenotype> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species neutral abnormal phenotype" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/AbnormalPhenotype>,
+        <http://purl.obolibrary.org/oboschema/SpeciesNeutral> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesSpecificAbnormalPhenotype> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species specific abnormal phenotype" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/AbnormalPhenotype>,
+        <http://purl.obolibrary.org/oboschema/SpeciesSpecific> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesSpecificLifeStage> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species specific life stage" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/Species> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/LifeStage>,
+        <http://purl.obolibrary.org/oboschema/SpeciesSpecific> .
+
+<http://purl.obolibrary.org/oboschema/Unit> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "unit" .
+
+<http://purl.obolibrary.org/oboschema/VariantAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "variant anatomical entity" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/AnatomicalEntity>,
+        <http://purl.obolibrary.org/oboschema/Variant> .
+
+<http://purl.obolibrary.org/oboschema/part_of> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "part_of" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> .
+
+meta:SubsetDefinition a owl:Class ;
+    rdfs:label "subset_definition" ;
+    skos:definition "the name and description of a subset" .
+
+meta:abnormal_phenotype_has_part a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "abnormal phenotype_has part" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AbnormalPhenotype> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> ;
+    rdfs:subPropertyOf meta:has_part .
+
+meta:anatomical_atomic_phenotypic_feature_characteristic_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "anatomical atomic phenotypic feature_characteristic of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AnatomicalAtomicPhenotypicFeature> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:atomic_phenotypic_feature_characteristic_of .
+
+meta:atomic_phenotypic_feature_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "atomic phenotypic feature_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/CharacteristicValue> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/subclass_of> .
+
+meta:atomic_trait_characteristic_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "atomic trait_characteristic of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AtomicTrait> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/Entity> ;
+    rdfs:subPropertyOf meta:characteristic_of .
+
+meta:atomic_trait_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "atomic trait_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AtomicTrait> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/CharacteristicAttribute> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/subclass_of> .
+
+meta:biological_process_atomic_phenotypic_feature_characteristic_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "biological process atomic phenotypic feature_characteristic of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/BiologicalProcessAtomicPhenotypicFeature> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/BiologicalProcess> ;
+    rdfs:subPropertyOf meta:atomic_phenotypic_feature_characteristic_of .
+
+meta:cellular_evolved_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "cellular evolved anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_part_of .
+
+meta:cellular_evolved_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "cellular evolved anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_subclass_of .
+
+meta:chemical_entity_atomic_phenotypic_feature_characteristic_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "chemical entity atomic phenotypic feature_characteristic of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/ChemicalEntityAtomicPhenotypicFeature> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/ChemicalEntity> ;
+    rdfs:subPropertyOf meta:atomic_phenotypic_feature_characteristic_of .
+
+meta:constructed_cell_type_analog_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "constructed cell type_analog of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/analog_of> .
+
+meta:constructed_cell_type_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "constructed cell type_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+    rdfs:subPropertyOf meta:anatomical_entity_part_of .
+
+meta:constructed_cell_type_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "constructed cell type_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+    rdfs:subPropertyOf meta:anatomical_entity_subclass_of .
+
+meta:gross_constructed_anatomical_entity_analog_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross constructed anatomical entity_analog of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/analog_of> .
+
+meta:gross_constructed_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross constructed anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_part_of .
+
+meta:gross_constructed_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross constructed anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_subclass_of .
+
+meta:gross_pathological_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross pathological anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_part_of .
+
+meta:gross_pathological_anatomical_entity_pathological_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross pathological anatomical entity_pathological of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:pathological_of .
+
+meta:gross_pathological_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross pathological anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_subclass_of .
+
+meta:mixture_of_chemical_entities_has_part a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "mixture of chemical entities_has part" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/ChemicalEntity> ;
+    rdfs:subPropertyOf meta:has_part .
+
+meta:organismal_never_in_taxon a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "organismal_never in taxon" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/Organismal> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+    rdfs:subPropertyOf meta:never_in_taxon .
+
+meta:pathological_cell_type_analog_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pathological cell type_analog of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/analog_of> .
+
+meta:pathological_cell_type_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pathological cell type_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+    rdfs:subPropertyOf meta:anatomical_entity_part_of .
+
+meta:pathological_cell_type_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pathological cell type_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+    rdfs:subPropertyOf meta:anatomical_entity_subclass_of .
+
+meta:species_neutral_evolved_cell_type_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral evolved cell type_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_cell_type_develops_from .
+
+meta:species_neutral_evolved_cell_type_existence_ends_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral evolved cell type_existence ends during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_ends_during .
+
+meta:species_neutral_evolved_cell_type_existence_starts_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral evolved cell type_existence starts during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_starts_during .
+
+meta:species_neutral_evolved_cell_type_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral evolved cell type_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_cell_type_part_of .
+
+meta:species_neutral_evolved_cell_type_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral evolved cell type_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_cell_type_subclass_of .
+
+meta:species_neutral_gross_evolved_anatomical_entity_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral gross evolved anatomical entity_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:gross_evolved_anatomical_entity_develops_from .
+
+meta:species_neutral_gross_evolved_anatomical_entity_existence_ends_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral gross evolved anatomical entity_existence ends during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_ends_during .
+
+meta:species_neutral_gross_evolved_anatomical_entity_existence_starts_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral gross evolved anatomical entity_existence starts during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_starts_during .
+
+meta:species_neutral_gross_evolved_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral gross evolved anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:gross_evolved_anatomical_entity_part_of .
+
+meta:species_neutral_gross_evolved_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral gross evolved anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:gross_evolved_anatomical_entity_subclass_of .
+
+meta:species_neutral_in_taxon a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species neutral_in taxon" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesNeutral> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/BroadOrganismTaxon> ;
+    rdfs:subPropertyOf meta:organismal_in_taxon .
+
+meta:species_specific_evolved_cell_type_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific evolved cell type_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_cell_type_develops_from .
+
+meta:species_specific_evolved_cell_type_existence_ends_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific evolved cell type_existence ends during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/LifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_ends_during .
+
+meta:species_specific_evolved_cell_type_existence_starts_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific evolved cell type_existence starts during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/LifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_starts_during .
+
+meta:species_specific_evolved_cell_type_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific evolved cell type_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_cell_type_part_of .
+
+meta:species_specific_evolved_cell_type_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific evolved cell type_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_cell_type_subclass_of .
+
+meta:species_specific_gross_evolved_anatomical_entity_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific gross evolved anatomical entity_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:gross_evolved_anatomical_entity_develops_from .
+
+meta:species_specific_gross_evolved_anatomical_entity_existence_ends_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific gross evolved anatomical entity_existence ends during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/LifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_ends_during .
+
+meta:species_specific_gross_evolved_anatomical_entity_existence_starts_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific gross evolved anatomical entity_existence starts during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/LifeStage> ;
+    rdfs:subPropertyOf meta:anatomical_entity_existence_starts_during .
+
+meta:species_specific_gross_evolved_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific gross evolved anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:gross_evolved_anatomical_entity_part_of .
+
+meta:species_specific_gross_evolved_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific gross evolved anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:gross_evolved_anatomical_entity_subclass_of .
+
+meta:species_specific_in_taxon a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "species specific_in taxon" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/SpeciesSpecific> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/Species> ;
+    rdfs:subPropertyOf meta:organismal_in_taxon .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Boolean> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "boolean" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:boolean ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A binary (true or false) value" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Date> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "date" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:date ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a date (year, month and day) in an idealized calendar" ;
+    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Datetime> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "datetime" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "The combination of a date and time" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Double> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "double" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:double ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A real number that conforms to the xsd:double specification" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Float> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "float" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:float ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A real number that conforms to the xsd:float specification" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Integer> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "integer" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:integer ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "An integer" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Ncname> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "ncname" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "Prefix part of CURIE" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Nodeidentifier> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "nodeidentifier" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange <http://www.w3.org/ns/shex#nonLiteral> ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A URI, CURIE or BNODE that represents a node in a model." .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Objectidentifier> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "objectidentifier" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange <http://www.w3.org/ns/shex#iri> ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A URI or CURIE that represents an object in the model." ;
+    skos:note "Used for inheritence and type checking" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Time> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "time" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A time object represents a (local) time of day, independent of any particular day" ;
+    skos:editorialNote "URI is dateTime because OWL reasoners don't work with straight date or time" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Uri> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "uri" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:anyURI ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a complete URI" .
+
+<https://w3id.org/biolink/biolinkml/meta/types/Uriorcurie> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "uriorcurie" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:anyURI ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "a URI or a CURIE" .
+
+<obo-schema> a owl:Ontology ;
+    rdfs:label "obo-schema" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "OBO Schema Map" ;
+    skos:definition "A high level map of OBO classes and how they connect" ;
+    meta:generation_date "2020-11-17 13:14" ;
+    meta:metamodel_version "1.6.0" ;
+    meta:source_file "obo-schema.yaml" ;
+    meta:source_file_date "Tue Nov 17 13:14:03 2020" ;
+    meta:source_file_size 12035 .
+
+<http://purl.obolibrary.org/oboschema/AnatomicalAtomicPhenotypicFeature> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "anatomical atomic phenotypic feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty meta:characteristic_of ],
+        <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> .
+
+<http://purl.obolibrary.org/oboschema/BiologicalProcessAtomicPhenotypicFeature> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "biological process atomic phenotypic feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/BiologicalProcess> ;
+            owl:onProperty meta:characteristic_of ],
+        <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> .
+
+<http://purl.obolibrary.org/oboschema/ChemicalEntityAtomicPhenotypicFeature> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "chemical entity atomic phenotypic feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/ChemicalEntity> ;
+            owl:onProperty meta:characteristic_of ],
+        <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> .
+
+<http://purl.obolibrary.org/oboschema/Occurrent> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "occurrent" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> .
+
+<http://purl.obolibrary.org/oboschema/Variant> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "variant" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Origin> .
+
+meta:anatomical_entity_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "anatomical entity_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/develops_from> .
+
+<http://purl.obolibrary.org/oboschema/AtomicTrait> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "atomic trait" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/Entity> ;
+            owl:onProperty meta:characteristic_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/CharacteristicAttribute> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        <http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature> .
+
+<http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "atomic trait or phenotypic feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Organismal> .
+
+<http://purl.obolibrary.org/oboschema/BiologicalProcess> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "biological process" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity> ;
+    skos:altLabel "pathway" .
+
+<http://purl.obolibrary.org/oboschema/BiologicalProcessOrMolecularActivity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "biological process or molecular activity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Evolved>,
+        <http://purl.obolibrary.org/oboschema/Organismal>,
+        <http://purl.obolibrary.org/oboschema/Process> .
+
+<http://purl.obolibrary.org/oboschema/Characteristic> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "characteristic" .
+
+<http://purl.obolibrary.org/oboschema/CharacteristicAttribute> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "characteristic attribute" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Characteristic> .
+
+<http://purl.obolibrary.org/oboschema/CharacteristicValue> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "characteristic value" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Characteristic> .
+
+<http://purl.obolibrary.org/oboschema/Information> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "information" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Constructed> .
+
+<http://purl.obolibrary.org/oboschema/MixtureOfChemicalEntities> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "mixture of chemical entities" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/ChemicalEntity> ;
+            owl:onProperty meta:has_part ] .
+
+meta:evolved_anatomical_entity_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "evolved anatomical entity_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_develops_from .
+
+meta:evolved_cell_type_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "evolved cell type_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_develops_from .
+
+meta:evolved_cell_type_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "evolved cell type_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_part_of .
+
+meta:evolved_cell_type_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "evolved cell type_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_subclass_of .
+
+meta:gross_evolved_anatomical_entity_develops_from a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross evolved anatomical entity_develops from" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_develops_from .
+
+meta:gross_evolved_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross evolved anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_part_of .
+
+meta:gross_evolved_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "gross evolved anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:evolved_anatomical_entity_subclass_of .
+
+meta:organismal_in_taxon a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "organismal_in taxon" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/Organismal> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+    rdfs:subPropertyOf meta:in_taxon .
+
+meta:pathological_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "pathological of" ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/AbnormalPhenotype> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "abnormal phenotype" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> ;
+            owl:onProperty meta:has_part ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Abnormal>,
+        <http://purl.obolibrary.org/oboschema/Organismal> .
+
+<http://purl.obolibrary.org/oboschema/Constructed> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "constructed" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Origin>,
+        meta:mixin ;
+    skos:altLabel "human constructed",
+        "social" .
+
+<http://purl.obolibrary.org/oboschema/Entity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "entity" .
+
+<http://purl.obolibrary.org/oboschema/Evolved> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "evolved" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Origin>,
+        meta:mixin ;
+    skos:altLabel "canonical",
+        "normal" .
+
+<http://purl.obolibrary.org/oboschema/PhysicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "physical entity" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> .
+
+meta:atomic_phenotypic_feature_characteristic_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "atomic phenotypic feature_characteristic of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> ;
+    rdfs:subPropertyOf meta:characteristic_of .
+
+meta:evolved_anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "evolved anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_part_of .
+
+meta:evolved_anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "evolved anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+    rdfs:subPropertyOf meta:anatomical_entity_subclass_of .
+
+<http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "cellular evolved anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/CellularEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/ChemicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "chemical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Organismal>,
+        <http://purl.obolibrary.org/oboschema/PhysicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/Origin> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "origin" ;
+    rdfs:subClassOf meta:mixin .
+
+<http://purl.obolibrary.org/oboschema/Process> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "process" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> .
+
+meta:anatomical_entity_existence_ends_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "anatomical entity_existence ends during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/LifeStage> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/existence_ends_during> .
+
+meta:anatomical_entity_existence_starts_during a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "anatomical entity_existence starts during" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/LifeStage> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/existence_starts_during> .
+
+meta:has_part a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "has part" ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> .
+
+<http://purl.obolibrary.org/oboschema/Abnormal> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "abnormal" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Origin>,
+        meta:mixin ;
+    skos:altLabel "aberrant",
+        "non-canonical",
+        "pathological" .
+
+<http://purl.obolibrary.org/oboschema/BroadOrganismTaxon> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "broad organism taxon" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/OrganismTaxon> .
+
+<http://purl.obolibrary.org/oboschema/Species> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/OrganismTaxon> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesNeutral> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species neutral" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/BroadOrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Organismal>,
+        meta:mixin ;
+    skos:definition "may still be specific to a broader taxonomic grouping, e.g. metazoa. Must explicitly group other ontologies" .
+
+<http://purl.obolibrary.org/oboschema/SpeciesSpecific> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species specific" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/Species> ;
+            owl:onProperty meta:in_taxon ],
+        <http://purl.obolibrary.org/oboschema/Organismal>,
+        meta:mixin ;
+    skos:definition "species specific may also be applicable at broader levels, e.g. genus" .
+
+meta:anatomical_entity_part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "anatomical entity_part of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:subPropertyOf meta:part_of .
+
+meta:anatomical_entity_subclass_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "anatomical entity_subclass of" ;
+    rdfs:domain <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    rdfs:subPropertyOf <http://purl.obolibrary.org/oboschema/subclass_of> .
+
+<http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "physical entity or process" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Entity> .
+
+<http://purl.obolibrary.org/oboschema/analog_of> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "analog of" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> .
+
+<http://purl.obolibrary.org/oboschema/existence_ends_during> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "existence ends during" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> .
+
+<http://purl.obolibrary.org/oboschema/existence_starts_during> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "existence starts during" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> .
+
+<https://w3id.org/biolink/biolinkml/meta/types/String> a owl:Class,
+        meta:TypeDefinition ;
+    rdfs:label "string" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty meta:topValue ;
+            owl:qualifiedCardinality 1 ] ;
+    skos:definition "A character string" .
+
+<http://purl.obolibrary.org/oboschema/ConstructedCellType> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "constructed cell type" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/analog_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/ConstructedCellType> ;
+            owl:onProperty meta:part_of ],
+        <http://purl.obolibrary.org/oboschema/AnatomicalEntity>,
+        <http://purl.obolibrary.org/oboschema/Constructed> ;
+    skos:altLabel "in vitro cell type" .
+
+<http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "gross constructed anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/analog_of> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/GrossConstructedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        <http://purl.obolibrary.org/oboschema/AnatomicalEntity>,
+        <http://purl.obolibrary.org/oboschema/Constructed> ;
+    skos:altLabel "organoid" .
+
+<http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "gross pathological anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+            owl:onProperty meta:pathological_of ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/GrossPathologicalAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        <http://purl.obolibrary.org/oboschema/Abnormal>,
+        <http://purl.obolibrary.org/oboschema/AnatomicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/PathologicalCellType> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "pathological cell type" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/analog_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/PathologicalCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        <http://purl.obolibrary.org/oboschema/Abnormal>,
+        <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+    skos:altLabel "abnormal cell type" .
+
+meta:characteristic_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "characteristic of" ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> .
+
+<http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "atomic phenotypic feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/PhysicalEntityOrProcess> ;
+            owl:onProperty meta:characteristic_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/CharacteristicValue> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        <http://purl.obolibrary.org/oboschema/AtomicTraitOrPhenotypicFeature> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species neutral life stage" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/BroadOrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/LifeStage>,
+        <http://purl.obolibrary.org/oboschema/SpeciesNeutral> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species specific gross evolved anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesSpecificGrossEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/Species> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/LifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_starts_during> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/LifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_ends_during> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity>,
+        <http://purl.obolibrary.org/oboschema/SpeciesSpecific> .
+
+<http://purl.obolibrary.org/oboschema/develops_from> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "develops from" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> .
+
+<http://purl.obolibrary.org/oboschema/Organismal> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "organismal" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        meta:mixin .
+
+<http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species neutral evolved cell type" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_starts_during> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/BroadOrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_ends_during> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        <http://purl.obolibrary.org/oboschema/EvolvedCellType>,
+        <http://purl.obolibrary.org/oboschema/SpeciesNeutral> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species neutral gross evolved anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesNeutralGrossEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_starts_during> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/BroadOrganismTaxon> ;
+            owl:onProperty meta:in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesNeutralLifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_ends_during> ],
+        <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity>,
+        <http://purl.obolibrary.org/oboschema/SpeciesNeutral> .
+
+<http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "species specific evolved cell type" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/LifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_starts_during> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/OrganismTaxon> ;
+            owl:onProperty meta:never_in_taxon ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/LifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_ends_during> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/SpeciesSpecificEvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/Species> ;
+            owl:onProperty meta:in_taxon ],
+        <http://purl.obolibrary.org/oboschema/EvolvedCellType>,
+        <http://purl.obolibrary.org/oboschema/SpeciesSpecific> .
+
+<http://purl.obolibrary.org/oboschema/EvolvedCellType> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "evolved cell type" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/EvolvedCellType> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> .
+
+meta:TypeDefinition a owl:Class ;
+    rdfs:label "type_definition" ;
+    skos:definition "A data type definition." .
+
+meta:topValue a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+<http://purl.obolibrary.org/oboschema/LifeStage> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "life stage" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/oboschema/Evolved>,
+        <http://purl.obolibrary.org/oboschema/Occurrent> .
+
+meta:never_in_taxon a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "never in taxon" ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/OrganismTaxon> .
+
+meta:part_of a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "part of" ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/AnatomicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "gross evolved anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/GrossEvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> .
+
+meta:in_taxon a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "in taxon" ;
+    rdfs:range <http://purl.obolibrary.org/oboschema/OrganismTaxon> .
+
+<http://purl.obolibrary.org/oboschema/subclass_of> a owl:ObjectProperty,
+        meta:SlotDefinition ;
+    rdfs:label "subclass of" ;
+    rdfs:range <https://w3id.org/biolink/biolinkml/meta/types/String> .
+
+<http://purl.obolibrary.org/oboschema/AnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/LifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_ends_during> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/LifeStage> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/existence_starts_during> ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/AnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        <http://purl.obolibrary.org/oboschema/PhysicalEntity> .
+
+<http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "evolved anatomical entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/subclass_of> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty meta:part_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom <http://purl.obolibrary.org/oboschema/EvolvedAnatomicalEntity> ;
+            owl:onProperty <http://purl.obolibrary.org/oboschema/develops_from> ],
+        <http://purl.obolibrary.org/oboschema/AnatomicalEntity>,
+        <http://purl.obolibrary.org/oboschema/Evolved> .
+
+<http://purl.obolibrary.org/oboschema/OrganismTaxon> a owl:Class,
+        meta:ClassDefinition ;
+    rdfs:label "organism taxon" .
+
+meta:ClassDefinition a owl:Class ;
+    rdfs:label "class_definition" ;
+    skos:definition "the definition of a class or interface" .
+
+meta:SlotDefinition a owl:Class ;
+    rdfs:label "slot_definition" ;
+    skos:definition "the definition of a property or a slot" .
+
+
+

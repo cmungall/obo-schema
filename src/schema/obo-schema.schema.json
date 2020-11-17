@@ -1,0 +1,954 @@
+{
+   "$id": "obo-schema",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "Abnormal": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Abnormal",
+         "type": "object"
+      },
+      "AbnormalPhenotype": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "has_part": {
+               "$ref": "#/definitions/AtomicPhenotypicFeature"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "AbnormalPhenotype",
+         "type": "object"
+      },
+      "AnatomicalAtomicPhenotypicFeature": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "characteristic_of": {
+               "$ref": "#/definitions/EvolvedAnatomicalEntity"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/CharacteristicValue"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "AnatomicalAtomicPhenotypicFeature",
+         "type": "object"
+      },
+      "AtomicPhenotypicFeature": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "characteristic_of": {
+               "$ref": "#/definitions/PhysicalEntityOrProcess"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/CharacteristicValue"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "AtomicPhenotypicFeature",
+         "type": "object"
+      },
+      "AtomicTrait": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "characteristic_of": {
+               "$ref": "#/definitions/Entity"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/CharacteristicAttribute"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "AtomicTrait",
+         "type": "object"
+      },
+      "AtomicTraitOrPhenotypicFeature": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "AtomicTraitOrPhenotypicFeature",
+         "type": "object"
+      },
+      "BiologicalProcess": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "BiologicalProcess",
+         "type": "object"
+      },
+      "BiologicalProcessAtomicPhenotypicFeature": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "characteristic_of": {
+               "$ref": "#/definitions/BiologicalProcess"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/CharacteristicValue"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "BiologicalProcessAtomicPhenotypicFeature",
+         "type": "object"
+      },
+      "BiologicalProcessOrMolecularActivity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "BiologicalProcessOrMolecularActivity",
+         "type": "object"
+      },
+      "BroadOrganismTaxon": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "BroadOrganismTaxon",
+         "type": "object"
+      },
+      "CellularEvolvedAnatomicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/EvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/EvolvedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/CellularEvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "CellularEvolvedAnatomicalEntity",
+         "type": "object"
+      },
+      "Characteristic": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Characteristic",
+         "type": "object"
+      },
+      "CharacteristicAttribute": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "CharacteristicAttribute",
+         "type": "object"
+      },
+      "CharacteristicValue": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "CharacteristicValue",
+         "type": "object"
+      },
+      "ChemicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "ChemicalEntity",
+         "type": "object"
+      },
+      "ChemicalEntityAtomicPhenotypicFeature": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "characteristic_of": {
+               "$ref": "#/definitions/ChemicalEntity"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/CharacteristicValue"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "ChemicalEntityAtomicPhenotypicFeature",
+         "type": "object"
+      },
+      "Constructed": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Constructed",
+         "type": "object"
+      },
+      "ConstructedCellType": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "analog_of": {
+               "$ref": "#/definitions/EvolvedCellType"
+            },
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/AnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/ConstructedCellType"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/ConstructedCellType"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "ConstructedCellType",
+         "type": "object"
+      },
+      "Disease": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "Disease",
+         "type": "object"
+      },
+      "Entity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Entity",
+         "type": "object"
+      },
+      "EnvironmentalProcess": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "EnvironmentalProcess",
+         "type": "object"
+      },
+      "Evolved": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Evolved",
+         "type": "object"
+      },
+      "EvolvedCellType": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/EvolvedCellType"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/GrossEvolvedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/EvolvedCellType"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "EvolvedCellType",
+         "type": "object"
+      },
+      "Exposure": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "Exposure",
+         "type": "object"
+      },
+      "Food": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "has_part": {
+               "$ref": "#/definitions/ChemicalEntity"
+            }
+         },
+         "required": [],
+         "title": "Food",
+         "type": "object"
+      },
+      "GrossConstructedAnatomicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "analog_of": {
+               "$ref": "#/definitions/GrossEvolvedAnatomicalEntity"
+            },
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/AnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/GrossConstructedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/GrossConstructedAnatomicalEntity"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "GrossConstructedAnatomicalEntity",
+         "type": "object"
+      },
+      "GrossEvolvedAnatomicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/GrossEvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/EvolvedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/EvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "GrossEvolvedAnatomicalEntity",
+         "type": "object"
+      },
+      "GrossPathologicalAnatomicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/AnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/GrossPathologicalAnatomicalEntity"
+            },
+            "pathological_of": {
+               "$ref": "#/definitions/GrossEvolvedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/GrossPathologicalAnatomicalEntity"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "GrossPathologicalAnatomicalEntity",
+         "type": "object"
+      },
+      "Information": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Information",
+         "type": "object"
+      },
+      "LifeStage": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "LifeStage",
+         "type": "object"
+      },
+      "MixtureOfChemicalEntities": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "has_part": {
+               "$ref": "#/definitions/ChemicalEntity"
+            }
+         },
+         "required": [],
+         "title": "MixtureOfChemicalEntities",
+         "type": "object"
+      },
+      "MolecularActivity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "MolecularActivity",
+         "type": "object"
+      },
+      "NonOrganismal": {
+         "additionalProperties": false,
+         "description": "an entity or class that is not a part or derived from an organism.",
+         "properties": {},
+         "required": [],
+         "title": "NonOrganismal",
+         "type": "object"
+      },
+      "Occurrent": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Occurrent",
+         "type": "object"
+      },
+      "OntologyAxiom": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "OntologyAxiom",
+         "type": "object"
+      },
+      "OrganismTaxon": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "OrganismTaxon",
+         "type": "object"
+      },
+      "Organismal": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "Organismal",
+         "type": "object"
+      },
+      "Origin": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Origin",
+         "type": "object"
+      },
+      "PathologicalCellType": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "analog_of": {
+               "$ref": "#/definitions/EvolvedCellType"
+            },
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/AnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "part_of": {
+               "$ref": "#/definitions/PathologicalCellType"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/PathologicalCellType"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "PathologicalCellType",
+         "type": "object"
+      },
+      "PathologicalProcess": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "PathologicalProcess",
+         "type": "object"
+      },
+      "PhysicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "PhysicalEntity",
+         "type": "object"
+      },
+      "PhysicalEntityOrProcess": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "PhysicalEntityOrProcess",
+         "type": "object"
+      },
+      "PlanetaryEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "PlanetaryEntity",
+         "type": "object"
+      },
+      "Process": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Process",
+         "type": "object"
+      },
+      "Publication": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Publication",
+         "type": "object"
+      },
+      "Species": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Species",
+         "type": "object"
+      },
+      "SpeciesNeutral": {
+         "additionalProperties": false,
+         "description": "may still be specific to a broader taxonomic grouping, e.g. metazoa. Must explicitly group other ontologies",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/BroadOrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "SpeciesNeutral",
+         "type": "object"
+      },
+      "SpeciesNeutralAbnormalPhenotype": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "has_part": {
+               "$ref": "#/definitions/AtomicPhenotypicFeature"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "SpeciesNeutralAbnormalPhenotype",
+         "type": "object"
+      },
+      "SpeciesNeutralEvolvedCellType": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesNeutralEvolvedCellType"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/SpeciesNeutralLifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/SpeciesNeutralLifeStage"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/BroadOrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "part_of": {
+               "$ref": "#/definitions/SpeciesNeutralEvolvedCellType"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesNeutralEvolvedCellType"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "SpeciesNeutralEvolvedCellType",
+         "type": "object"
+      },
+      "SpeciesNeutralGrossEvolvedAnatomicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesNeutralGrossEvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/SpeciesNeutralLifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/SpeciesNeutralLifeStage"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/BroadOrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "part_of": {
+               "$ref": "#/definitions/SpeciesNeutralGrossEvolvedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesNeutralGrossEvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "SpeciesNeutralGrossEvolvedAnatomicalEntity",
+         "type": "object"
+      },
+      "SpeciesNeutralLifeStage": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/BroadOrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "SpeciesNeutralLifeStage",
+         "type": "object"
+      },
+      "SpeciesSpecific": {
+         "additionalProperties": false,
+         "description": "species specific may also be applicable at broader levels, e.g. genus",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/Species"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "SpeciesSpecific",
+         "type": "object"
+      },
+      "SpeciesSpecificAbnormalPhenotype": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "has_part": {
+               "$ref": "#/definitions/AtomicPhenotypicFeature"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "SpeciesSpecificAbnormalPhenotype",
+         "type": "object"
+      },
+      "SpeciesSpecificEvolvedCellType": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesSpecificEvolvedCellType"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/Species"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "part_of": {
+               "$ref": "#/definitions/SpeciesSpecificEvolvedCellType"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesSpecificEvolvedCellType"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "SpeciesSpecificEvolvedCellType",
+         "type": "object"
+      },
+      "SpeciesSpecificGrossEvolvedAnatomicalEntity": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "develops_from": {
+               "items": {
+                  "$ref": "#/definitions/SpeciesSpecificGrossEvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            },
+            "existence_ends_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "existence_starts_during": {
+               "$ref": "#/definitions/LifeStage"
+            },
+            "in_taxon": {
+               "$ref": "#/definitions/Species"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            },
+            "part_of": {
+               "$ref": "#/definitions/SpeciesSpecificGrossEvolvedAnatomicalEntity"
+            },
+            "subclass_of": {
+               "items": {
+                  "$ref": "#/definitions/GrossEvolvedAnatomicalEntity"
+               },
+               "type": "array"
+            }
+         },
+         "required": [],
+         "title": "SpeciesSpecificGrossEvolvedAnatomicalEntity",
+         "type": "object"
+      },
+      "SpeciesSpecificLifeStage": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "in_taxon": {
+               "$ref": "#/definitions/Species"
+            },
+            "never_in_taxon": {
+               "$ref": "#/definitions/OrganismTaxon"
+            }
+         },
+         "required": [],
+         "title": "SpeciesSpecificLifeStage",
+         "type": "object"
+      },
+      "Unit": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Unit",
+         "type": "object"
+      },
+      "Variant": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Variant",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "obo-schema",
+   "type": "object"
+}
+
