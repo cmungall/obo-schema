@@ -542,4 +542,8 @@ slots:
     multivalued: false
   characteristic of:
     multivalued: false
+  in taxon:
+    multivalued: false
+  never in taxon:
+    multivalued: true
     
