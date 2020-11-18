@@ -22,7 +22,7 @@ URI: [oboschema:VariantAnatomicalEntity](http://purl.obolibrary.org/oboschema/Va
 
 ### Inherited from anatomical entity:
 
- * [anatomical entity➞develops from](anatomical_entity_develops_from.md)  <sub>OPT</sub>
+ * [anatomical entity➞develops from](anatomical_entity_develops_from.md)  <sub>0..*</sub>
     * range: [AnatomicalEntity](AnatomicalEntity.md)
  * [anatomical entity➞existence ends during](anatomical_entity_existence_ends_during.md)  <sub>OPT</sub>
     * range: [LifeStage](LifeStage.md)
@@ -30,5 +30,5 @@ URI: [oboschema:VariantAnatomicalEntity](http://purl.obolibrary.org/oboschema/Va
     * range: [LifeStage](LifeStage.md)
  * [anatomical entity➞part of](anatomical_entity_part_of.md)  <sub>OPT</sub>
     * range: [AnatomicalEntity](AnatomicalEntity.md)
- * [anatomical entity➞subclass of](anatomical_entity_subclass_of.md)  <sub>OPT</sub>
+ * [anatomical entity➞subclass of](anatomical_entity_subclass_of.md)  <sub>0..*</sub>
     * range: [AnatomicalEntity](AnatomicalEntity.md)

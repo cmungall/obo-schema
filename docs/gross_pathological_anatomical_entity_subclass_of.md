@@ -9,7 +9,7 @@ URI: [oboschema:gross_pathological_anatomical_entity_subclass_of](http://purl.ob
 
 ## Domain and Range
 
-[GrossPathologicalAnatomicalEntity](GrossPathologicalAnatomicalEntity.md) ->  <sub>OPT</sub> [GrossPathologicalAnatomicalEntity](GrossPathologicalAnatomicalEntity.md)
+[GrossPathologicalAnatomicalEntity](GrossPathologicalAnatomicalEntity.md) ->  <sub>0..*</sub> [GrossPathologicalAnatomicalEntity](GrossPathologicalAnatomicalEntity.md)
 
 ## Parents
 

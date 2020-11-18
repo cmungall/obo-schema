@@ -9,7 +9,7 @@ URI: [oboschema:subclass_of](http://purl.obolibrary.org/oboschema/subclass_of)
 
 ## Domain and Range
 
-None ->  <sub>OPT</sub> [CharacteristicValue](CharacteristicValue.md)
+None ->  <sub>0..*</sub> [String](types/String.md)
 
 ## Parents
 

@@ -9,7 +9,7 @@ URI: [oboschema:species_neutral_evolved_cell_type_subclass_of](http://purl.oboli
 
 ## Domain and Range
 
-[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md) ->  <sub>OPT</sub> [SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)
+[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md) ->  <sub>0..*</sub> [SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)
 
 ## Parents
 

@@ -9,7 +9,7 @@ URI: [oboschema:existence_starts_during](http://purl.obolibrary.org/oboschema/ex
 
 ## Domain and Range
 
-None ->  <sub>OPT</sub> [LifeStage](LifeStage.md)
+None ->  <sub>OPT</sub> [String](types/String.md)
 
 ## Parents
 

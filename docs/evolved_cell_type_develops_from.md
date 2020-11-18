@@ -9,7 +9,7 @@ URI: [oboschema:evolved_cell_type_develops_from](http://purl.obolibrary.org/obos
 
 ## Domain and Range
 
-[EvolvedCellType](EvolvedCellType.md) ->  <sub>OPT</sub> [EvolvedCellType](EvolvedCellType.md)
+[EvolvedCellType](EvolvedCellType.md) ->  <sub>0..*</sub> [EvolvedCellType](EvolvedCellType.md)
 
 ## Parents
 

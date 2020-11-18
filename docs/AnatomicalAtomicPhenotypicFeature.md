@@ -26,5 +26,5 @@ URI: [oboschema:AnatomicalAtomicPhenotypicFeature](http://purl.obolibrary.org/ob
 
 ### Inherited from atomic phenotypic feature:
 
- * [atomic phenotypic feature➞subclass of](atomic_phenotypic_feature_subclass_of.md)  <sub>OPT</sub>
+ * [atomic phenotypic feature➞subclass of](atomic_phenotypic_feature_subclass_of.md)  <sub>0..*</sub>
     * range: [CharacteristicValue](CharacteristicValue.md)

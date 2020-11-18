@@ -134,6 +134,7 @@ A high level map of OBO classes and how they connect
        * [gross constructed anatomical entity➞part of](gross_constructed_anatomical_entity_part_of.md)
        * [gross pathological anatomical entity➞part of](gross_pathological_anatomical_entity_part_of.md)
        * [pathological cell type➞part of](pathological_cell_type_part_of.md)
+ * [part_of](part_of.md)
  * [pathological of](pathological_of.md)
     * [gross pathological anatomical entity➞pathological of](gross_pathological_anatomical_entity_pathological_of.md)
  * [subclass of](subclass_of.md)

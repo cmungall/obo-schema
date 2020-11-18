@@ -9,7 +9,7 @@ URI: [oboschema:analog_of](http://purl.obolibrary.org/oboschema/analog_of)
 
 ## Domain and Range
 
-None ->  <sub>OPT</sub> [GrossEvolvedAnatomicalEntity](GrossEvolvedAnatomicalEntity.md)
+None ->  <sub>OPT</sub> [String](types/String.md)
 
 ## Parents
 

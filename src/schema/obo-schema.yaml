@@ -540,4 +540,6 @@ slots:
     multivalued: false
   existence ends during:
     multivalued: false
+  characteristic of:
+    multivalued: false
     

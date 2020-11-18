@@ -9,7 +9,7 @@ URI: [oboschema:species_specific_evolved_cell_type_develops_from](http://purl.ob
 
 ## Domain and Range
 
-[SpeciesSpecificEvolvedCellType](SpeciesSpecificEvolvedCellType.md) ->  <sub>OPT</sub> [SpeciesSpecificEvolvedCellType](SpeciesSpecificEvolvedCellType.md)
+[SpeciesSpecificEvolvedCellType](SpeciesSpecificEvolvedCellType.md) ->  <sub>0..*</sub> [SpeciesSpecificEvolvedCellType](SpeciesSpecificEvolvedCellType.md)
 
 ## Parents
 

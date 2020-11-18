@@ -9,7 +9,7 @@ URI: [oboschema:constructed_cell_type_subclass_of](http://purl.obolibrary.org/ob
 
 ## Domain and Range
 
-[ConstructedCellType](ConstructedCellType.md) ->  <sub>OPT</sub> [ConstructedCellType](ConstructedCellType.md)
+[ConstructedCellType](ConstructedCellType.md) ->  <sub>0..*</sub> [ConstructedCellType](ConstructedCellType.md)
 
 ## Parents
 

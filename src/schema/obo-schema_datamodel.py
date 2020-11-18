@@ -1,5 +1,5 @@
 # Auto generated from obo-schema.yaml by pythongen.py version: 0.9.0
-# Generation date: 2020-11-17 13:14
+# Generation date: 2020-11-17 16:00
 # Schema: obo-schema
 #
 # id: obo-schema
@@ -1089,6 +1089,9 @@ slots.existence_starts_during = Slot(uri=OBOSCHEMA.existence_starts_during, name
 slots.existence_ends_during = Slot(uri=OBOSCHEMA.existence_ends_during, name="existence ends during", curie=OBOSCHEMA.curie('existence_ends_during'),
                    model_uri=OBOSCHEMA.existence_ends_during, domain=None, range=Optional[str])
 
+slots.characteristic_of = Slot(uri=OBOSCHEMA.characteristic_of, name="characteristic of", curie=OBOSCHEMA.curie('characteristic_of'),
+                   model_uri=OBOSCHEMA.characteristic_of, domain=None, range=Optional[str])
+
 slots.in_taxon = Slot(uri=OBOSCHEMA.in_taxon, name="in taxon", curie=OBOSCHEMA.curie('in_taxon'),
                    model_uri=OBOSCHEMA.in_taxon, domain=None, range=Optional[Union[dict, OrganismTaxon]])
 
@@ -1097,9 +1100,6 @@ slots.never_in_taxon = Slot(uri=OBOSCHEMA.never_in_taxon, name="never in taxon",
 
 slots.has_part = Slot(uri=OBOSCHEMA.has_part, name="has part", curie=OBOSCHEMA.curie('has_part'),
                    model_uri=OBOSCHEMA.has_part, domain=None, range=Optional[Union[dict, AtomicPhenotypicFeature]])
-
-slots.characteristic_of = Slot(uri=OBOSCHEMA.characteristic_of, name="characteristic of", curie=OBOSCHEMA.curie('characteristic_of'),
-                   model_uri=OBOSCHEMA.characteristic_of, domain=None, range=Optional[Union[dict, PhysicalEntityOrProcess]])
 
 slots.part_of = Slot(uri=OBOSCHEMA.part_of, name="part of", curie=OBOSCHEMA.curie('part_of'),
                    model_uri=OBOSCHEMA.part_of, domain=None, range=Optional[Union[dict, AnatomicalEntity]])

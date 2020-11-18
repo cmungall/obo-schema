@@ -9,7 +9,7 @@ URI: [oboschema:anatomical_entity_develops_from](http://purl.obolibrary.org/obos
 
 ## Domain and Range
 
-[AnatomicalEntity](AnatomicalEntity.md) ->  <sub>OPT</sub> [AnatomicalEntity](AnatomicalEntity.md)
+[AnatomicalEntity](AnatomicalEntity.md) ->  <sub>0..*</sub> [AnatomicalEntity](AnatomicalEntity.md)
 
 ## Parents
 

@@ -9,7 +9,7 @@ URI: [oboschema:cellular_evolved_anatomical_entity_subclass_of](http://purl.obol
 
 ## Domain and Range
 
-[CellularEvolvedAnatomicalEntity](CellularEvolvedAnatomicalEntity.md) ->  <sub>OPT</sub> [CellularEvolvedAnatomicalEntity](CellularEvolvedAnatomicalEntity.md)
+[CellularEvolvedAnatomicalEntity](CellularEvolvedAnatomicalEntity.md) ->  <sub>0..*</sub> [CellularEvolvedAnatomicalEntity](CellularEvolvedAnatomicalEntity.md)
 
 ## Parents
 

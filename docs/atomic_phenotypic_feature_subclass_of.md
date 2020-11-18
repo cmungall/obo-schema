@@ -9,7 +9,7 @@ URI: [oboschema:atomic_phenotypic_feature_subclass_of](http://purl.obolibrary.or
 
 ## Domain and Range
 
-[AtomicPhenotypicFeature](AtomicPhenotypicFeature.md) ->  <sub>OPT</sub> [CharacteristicValue](CharacteristicValue.md)
+[AtomicPhenotypicFeature](AtomicPhenotypicFeature.md) ->  <sub>0..*</sub> [CharacteristicValue](CharacteristicValue.md)
 
 ## Parents
 

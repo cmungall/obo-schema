@@ -9,7 +9,7 @@ URI: [oboschema:species_specific_gross_evolved_anatomical_entity_subclass_of](ht
 
 ## Domain and Range
 
-[SpeciesSpecificGrossEvolvedAnatomicalEntity](SpeciesSpecificGrossEvolvedAnatomicalEntity.md) ->  <sub>OPT</sub> [GrossEvolvedAnatomicalEntity](GrossEvolvedAnatomicalEntity.md)
+[SpeciesSpecificGrossEvolvedAnatomicalEntity](SpeciesSpecificGrossEvolvedAnatomicalEntity.md) ->  <sub>0..*</sub> [GrossEvolvedAnatomicalEntity](GrossEvolvedAnatomicalEntity.md)
 
 ## Parents
 

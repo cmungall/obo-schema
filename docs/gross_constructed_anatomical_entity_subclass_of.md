@@ -9,7 +9,7 @@ URI: [oboschema:gross_constructed_anatomical_entity_subclass_of](http://purl.obo
 
 ## Domain and Range
 
-[GrossConstructedAnatomicalEntity](GrossConstructedAnatomicalEntity.md) ->  <sub>OPT</sub> [GrossConstructedAnatomicalEntity](GrossConstructedAnatomicalEntity.md)
+[GrossConstructedAnatomicalEntity](GrossConstructedAnatomicalEntity.md) ->  <sub>0..*</sub> [GrossConstructedAnatomicalEntity](GrossConstructedAnatomicalEntity.md)
 
 ## Parents
 

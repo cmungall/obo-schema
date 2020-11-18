@@ -9,7 +9,7 @@ URI: [oboschema:pathological_cell_type_subclass_of](http://purl.obolibrary.org/o
 
 ## Domain and Range
 
-[PathologicalCellType](PathologicalCellType.md) ->  <sub>OPT</sub> [PathologicalCellType](PathologicalCellType.md)
+[PathologicalCellType](PathologicalCellType.md) ->  <sub>0..*</sub> [PathologicalCellType](PathologicalCellType.md)
 
 ## Parents
 

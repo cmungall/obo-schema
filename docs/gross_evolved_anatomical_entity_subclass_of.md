@@ -9,7 +9,7 @@ URI: [oboschema:gross_evolved_anatomical_entity_subclass_of](http://purl.obolibr
 
 ## Domain and Range
 
-[GrossEvolvedAnatomicalEntity](GrossEvolvedAnatomicalEntity.md) ->  <sub>OPT</sub> [EvolvedAnatomicalEntity](EvolvedAnatomicalEntity.md)
+[GrossEvolvedAnatomicalEntity](GrossEvolvedAnatomicalEntity.md) ->  <sub>0..*</sub> [EvolvedAnatomicalEntity](EvolvedAnatomicalEntity.md)
 
 ## Parents
 

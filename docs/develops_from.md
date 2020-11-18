@@ -9,7 +9,7 @@ URI: [oboschema:develops_from](http://purl.obolibrary.org/oboschema/develops_fro
 
 ## Domain and Range
 
-None ->  <sub>OPT</sub> [AnatomicalEntity](AnatomicalEntity.md)
+None ->  <sub>0..*</sub> [String](types/String.md)
 
 ## Parents
 

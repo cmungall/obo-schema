@@ -9,7 +9,7 @@ URI: [oboschema:characteristic_of](http://purl.obolibrary.org/oboschema/characte
 
 ## Domain and Range
 
-None ->  <sub>OPT</sub> [PhysicalEntityOrProcess](PhysicalEntityOrProcess.md)
+None ->  <sub>OPT</sub> [String](types/String.md)
 
 ## Parents
 

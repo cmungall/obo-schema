@@ -7,7 +7,7 @@
 URI: [oboschema:AtomicPhenotypicFeature](http://purl.obolibrary.org/oboschema/AtomicPhenotypicFeature)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/[PhysicalEntityOrProcess],[OrganismTaxon],[ChemicalEntityAtomicPhenotypicFeature],[CharacteristicValue],[BiologicalProcessAtomicPhenotypicFeature],[AtomicTraitOrPhenotypicFeature],[PhysicalEntityOrProcess]<characteristic%20of%200..1-++[AtomicPhenotypicFeature],[CharacteristicValue]<subclass%20of%200..1-++[AtomicPhenotypicFeature],[AbnormalPhenotype]++-%20has%20part%200..1>[AtomicPhenotypicFeature],[AtomicPhenotypicFeature]^-[ChemicalEntityAtomicPhenotypicFeature],[AtomicPhenotypicFeature]^-[BiologicalProcessAtomicPhenotypicFeature],[AtomicPhenotypicFeature]^-[AnatomicalAtomicPhenotypicFeature],[AtomicTraitOrPhenotypicFeature]^-[AtomicPhenotypicFeature],[AnatomicalAtomicPhenotypicFeature],[AbnormalPhenotype])
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[PhysicalEntityOrProcess],[OrganismTaxon],[ChemicalEntityAtomicPhenotypicFeature],[CharacteristicValue],[BiologicalProcessAtomicPhenotypicFeature],[AtomicTraitOrPhenotypicFeature],[PhysicalEntityOrProcess]<characteristic%20of%200..1-++[AtomicPhenotypicFeature],[CharacteristicValue]<subclass%20of%200..*-++[AtomicPhenotypicFeature],[AbnormalPhenotype]++-%20has%20part%200..1>[AtomicPhenotypicFeature],[AtomicPhenotypicFeature]^-[ChemicalEntityAtomicPhenotypicFeature],[AtomicPhenotypicFeature]^-[BiologicalProcessAtomicPhenotypicFeature],[AtomicPhenotypicFeature]^-[AnatomicalAtomicPhenotypicFeature],[AtomicTraitOrPhenotypicFeature]^-[AtomicPhenotypicFeature],[AnatomicalAtomicPhenotypicFeature],[AbnormalPhenotype])
 
 ## Parents
 
@@ -31,5 +31,5 @@ URI: [oboschema:AtomicPhenotypicFeature](http://purl.obolibrary.org/oboschema/At
 
  * [atomic phenotypic feature➞characteristic of](atomic_phenotypic_feature_characteristic_of.md)  <sub>OPT</sub>
     * range: [PhysicalEntityOrProcess](PhysicalEntityOrProcess.md)
- * [atomic phenotypic feature➞subclass of](atomic_phenotypic_feature_subclass_of.md)  <sub>OPT</sub>
+ * [atomic phenotypic feature➞subclass of](atomic_phenotypic_feature_subclass_of.md)  <sub>0..*</sub>
     * range: [CharacteristicValue](CharacteristicValue.md)

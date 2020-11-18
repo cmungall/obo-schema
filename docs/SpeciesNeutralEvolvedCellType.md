@@ -7,7 +7,7 @@
 URI: [oboschema:SpeciesNeutralEvolvedCellType](http://purl.obolibrary.org/oboschema/SpeciesNeutralEvolvedCellType)
 
 
-![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SpeciesNeutralLifeStage],[SpeciesNeutralLifeStage]<existence%20ends%20during%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralLifeStage]<existence%20starts%20during%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]<develops%20from%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]<part%20of%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]<subclass%20of%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]uses%20-.->[SpeciesNeutral],[EvolvedCellType]^-[SpeciesNeutralEvolvedCellType],[SpeciesNeutral],[OrganismTaxon],[EvolvedCellType],[BroadOrganismTaxon])
+![img](http://yuml.me/diagram/nofunky;dir:TB/class/[SpeciesNeutralLifeStage],[SpeciesNeutralLifeStage]<existence%20ends%20during%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralLifeStage]<existence%20starts%20during%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]<develops%20from%200..*-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]<part%20of%200..1-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]<subclass%20of%200..*-++[SpeciesNeutralEvolvedCellType],[SpeciesNeutralEvolvedCellType]uses%20-.->[SpeciesNeutral],[EvolvedCellType]^-[SpeciesNeutralEvolvedCellType],[SpeciesNeutral],[OrganismTaxon],[EvolvedCellType],[BroadOrganismTaxon])
 
 ## Parents
 
@@ -19,16 +19,16 @@ URI: [oboschema:SpeciesNeutralEvolvedCellType](http://purl.obolibrary.org/obosch
 
 ## Referenced by class
 
- *  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)** *[species neutral evolved cell type➞develops from](species_neutral_evolved_cell_type_develops_from.md)*  <sub>OPT</sub>  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)**
+ *  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)** *[species neutral evolved cell type➞develops from](species_neutral_evolved_cell_type_develops_from.md)*  <sub>0..*</sub>  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)**
  *  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)** *[species neutral evolved cell type➞part of](species_neutral_evolved_cell_type_part_of.md)*  <sub>OPT</sub>  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)**
- *  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)** *[species neutral evolved cell type➞subclass of](species_neutral_evolved_cell_type_subclass_of.md)*  <sub>OPT</sub>  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)**
+ *  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)** *[species neutral evolved cell type➞subclass of](species_neutral_evolved_cell_type_subclass_of.md)*  <sub>0..*</sub>  **[SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)**
 
 ## Attributes
 
 
 ### Own
 
- * [species neutral evolved cell type➞develops from](species_neutral_evolved_cell_type_develops_from.md)  <sub>OPT</sub>
+ * [species neutral evolved cell type➞develops from](species_neutral_evolved_cell_type_develops_from.md)  <sub>0..*</sub>
     * range: [SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)
  * [species neutral evolved cell type➞existence ends during](species_neutral_evolved_cell_type_existence_ends_during.md)  <sub>OPT</sub>
     * range: [SpeciesNeutralLifeStage](SpeciesNeutralLifeStage.md)
@@ -36,7 +36,7 @@ URI: [oboschema:SpeciesNeutralEvolvedCellType](http://purl.obolibrary.org/obosch
     * range: [SpeciesNeutralLifeStage](SpeciesNeutralLifeStage.md)
  * [species neutral evolved cell type➞part of](species_neutral_evolved_cell_type_part_of.md)  <sub>OPT</sub>
     * range: [SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)
- * [species neutral evolved cell type➞subclass of](species_neutral_evolved_cell_type_subclass_of.md)  <sub>OPT</sub>
+ * [species neutral evolved cell type➞subclass of](species_neutral_evolved_cell_type_subclass_of.md)  <sub>0..*</sub>
     * range: [SpeciesNeutralEvolvedCellType](SpeciesNeutralEvolvedCellType.md)
 
 ### Mixed in from organismal:

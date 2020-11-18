@@ -26,8 +26,6 @@ URI: [oboschema:LifeStage](http://purl.obolibrary.org/oboschema/LifeStage)
 
  *  **[AnatomicalEntity](AnatomicalEntity.md)** *[anatomical entity➞existence ends during](anatomical_entity_existence_ends_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
  *  **[AnatomicalEntity](AnatomicalEntity.md)** *[anatomical entity➞existence starts during](anatomical_entity_existence_starts_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
- *  **None** *[existence ends during](existence_ends_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
- *  **None** *[existence starts during](existence_starts_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
  *  **[SpeciesSpecificEvolvedCellType](SpeciesSpecificEvolvedCellType.md)** *[species specific evolved cell type➞existence ends during](species_specific_evolved_cell_type_existence_ends_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
  *  **[SpeciesSpecificEvolvedCellType](SpeciesSpecificEvolvedCellType.md)** *[species specific evolved cell type➞existence starts during](species_specific_evolved_cell_type_existence_starts_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
  *  **[SpeciesSpecificGrossEvolvedAnatomicalEntity](SpeciesSpecificGrossEvolvedAnatomicalEntity.md)** *[species specific gross evolved anatomical entity➞existence ends during](species_specific_gross_evolved_anatomical_entity_existence_ends_during.md)*  <sub>OPT</sub>  **[LifeStage](LifeStage.md)**
